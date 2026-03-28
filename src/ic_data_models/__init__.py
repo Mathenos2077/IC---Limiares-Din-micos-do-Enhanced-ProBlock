@@ -1,0 +1,1 @@
+# Este arquivo transforma 'saida' em um sub-pacote.
