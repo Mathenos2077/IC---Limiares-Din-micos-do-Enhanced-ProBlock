@@ -1,7 +1,7 @@
 import numpy as np
 ### Calcula o IC - Índice de Convicção
 
-def getIC(quantidadeAval, square=False):
+def getIC(quantidadeAval, square=True):
     """
     Retorna o índice de convicção (IC) calculado a partir da quantidade de cada um dos tipos de votos na avaliação
     

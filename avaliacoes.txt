@@ -1,0 +1,1800 @@
+
+--- Rodada 1/100 ---
+  Avaliador 1: ExpEst=3, Freq=2.00, Acc=4.62, Subj=4.63, Vote=-2, Conf=0.90, Co=0.76, WeightedVote=-25.64
+  Avaliador 2: ExpEst=4, Freq=0.42, Acc=7.52, Subj=3.24, Vote=-2, Conf=1.10, Co=0.82, WeightedVote=-33.40
+  Avaliador 3: ExpEst=6, Freq=1.12, Acc=3.65, Subj=4.13, Vote=-2, Conf=0.90, Co=0.00, WeightedVote=-26.82
+  Avaliador 4: ExpEst=2, Freq=0.54, Acc=6.74, Subj=4.73, Vote=-1, Conf=1.10, Co=0.93, WeightedVote=-15.41
+  Avaliador 5: ExpEst=6, Freq=0.00, Acc=1.76, Subj=2.56, Vote=-1, Conf=1.00, Co=0.63, WeightedVote=-10.32
+  -> CDF: 0.0
+  -> IC: 0.8462
+  -> coScoreTotal: 0.627
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 2/100 ---
+  Avaliador 1: ExpEst=7, Freq=1.18, Acc=5.57, Subj=1.74, Vote=0, Conf=0.90, Co=0.40, WeightedVote=0.00
+  Avaliador 2: ExpEst=6, Freq=0.71, Acc=0.28, Subj=1.69, Vote=0, Conf=0.90, Co=0.70, WeightedVote=0.00
+  Avaliador 3: ExpEst=2, Freq=1.88, Acc=1.51, Subj=1.81, Vote=0, Conf=1.00, Co=0.27, WeightedVote=0.00
+  Avaliador 4: ExpEst=2, Freq=1.66, Acc=1.97, Subj=1.73, Vote=0, Conf=0.90, Co=0.05, WeightedVote=0.00
+  Avaliador 5: ExpEst=2, Freq=0.44, Acc=5.00, Subj=4.63, Vote=1, Conf=1.00, Co=0.33, WeightedVote=12.08
+  -> CDF: 0.6432
+  -> IC: 0.0294
+  -> coScoreTotal: 0.3501
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 3/100 ---
+  Avaliador 1: ExpEst=6, Freq=1.34, Acc=5.27, Subj=3.11, Vote=0, Conf=1.00, Co=0.74, WeightedVote=0.00
+  Avaliador 2: ExpEst=3, Freq=1.99, Acc=1.11, Subj=4.22, Vote=2, Conf=0.90, Co=0.67, WeightedVote=18.57
+  Avaliador 3: ExpEst=5, Freq=0.73, Acc=2.59, Subj=4.70, Vote=-2, Conf=1.00, Co=0.68, WeightedVote=-26.05
+  Avaliador 4: ExpEst=2, Freq=1.58, Acc=5.16, Subj=2.97, Vote=0, Conf=1.10, Co=0.13, WeightedVote=0.00
+  Avaliador 5: ExpEst=6, Freq=0.67, Acc=1.57, Subj=4.64, Vote=-2, Conf=1.10, Co=0.81, WeightedVote=-28.33
+  -> CDF: 0.2607
+  -> IC: 0.3333
+  -> coScoreTotal: 0.6062
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 4/100 ---
+  Avaliador 1: ExpEst=2, Freq=1.22, Acc=1.95, Subj=2.41, Vote=-2, Conf=1.10, Co=0.46, WeightedVote=-16.66
+  Avaliador 2: ExpEst=4, Freq=1.17, Acc=2.99, Subj=4.32, Vote=2, Conf=0.90, Co=0.04, WeightedVote=22.46
+  Avaliador 3: ExpEst=2, Freq=0.44, Acc=1.25, Subj=2.58, Vote=1, Conf=1.10, Co=0.85, WeightedVote=6.89
+  Avaliador 4: ExpEst=3, Freq=0.22, Acc=3.94, Subj=4.48, Vote=-1, Conf=1.10, Co=0.68, WeightedVote=-12.80
+  Avaliador 5: ExpEst=8, Freq=1.75, Acc=7.12, Subj=1.46, Vote=-2, Conf=1.10, Co=0.65, WeightedVote=-40.33
+  -> CDF: 0.276
+  -> IC: 0.4286
+  -> coScoreTotal: 0.5365
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 5/100 ---
+  Avaliador 1: ExpEst=4, Freq=0.42, Acc=3.07, Subj=3.02, Vote=-2, Conf=1.10, Co=0.42, WeightedVote=-23.11
+  Avaliador 2: ExpEst=4, Freq=1.47, Acc=2.34, Subj=2.39, Vote=2, Conf=1.10, Co=0.20, WeightedVote=22.46
+  Avaliador 3: ExpEst=3, Freq=0.60, Acc=0.95, Subj=2.77, Vote=2, Conf=0.90, Co=0.94, WeightedVote=13.17
+  Avaliador 4: ExpEst=5, Freq=1.09, Acc=6.69, Subj=3.24, Vote=-1, Conf=0.90, Co=0.43, WeightedVote=-14.42
+  Avaliador 5: ExpEst=7, Freq=1.37, Acc=5.83, Subj=1.99, Vote=-1, Conf=0.90, Co=0.82, WeightedVote=-14.57
+  -> CDF: 0.3326
+  -> IC: 0.1111
+  -> coScoreTotal: 0.564
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 6/100 ---
+  Avaliador 1: ExpEst=6, Freq=0.07, Acc=6.36, Subj=4.85, Vote=0, Conf=0.90, Co=0.51, WeightedVote=0.00
+  Avaliador 2: ExpEst=4, Freq=1.17, Acc=2.75, Subj=3.91, Vote=-1, Conf=0.90, Co=0.54, WeightedVote=-10.64
+  Avaliador 3: ExpEst=3, Freq=0.74, Acc=3.29, Subj=4.46, Vote=0, Conf=0.90, Co=0.05, WeightedVote=0.00
+  Avaliador 4: ExpEst=8, Freq=0.72, Acc=6.65, Subj=1.68, Vote=-1, Conf=1.00, Co=0.96, WeightedVote=-17.06
+  Avaliador 5: ExpEst=4, Freq=1.35, Acc=1.94, Subj=1.91, Vote=0, Conf=1.10, Co=0.61, WeightedVote=0.00
+  -> CDF: 0.1533
+  -> IC: 0.1538
+  -> coScoreTotal: 0.5323
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 7/100 ---
+  Avaliador 1: ExpEst=8, Freq=0.45, Acc=6.33, Subj=2.84, Vote=1, Conf=1.10, Co=0.27, WeightedVote=19.38
+  Avaliador 2: ExpEst=5, Freq=1.08, Acc=3.99, Subj=4.84, Vote=1, Conf=1.10, Co=0.92, WeightedVote=16.41
+  Avaliador 3: ExpEst=2, Freq=1.38, Acc=5.74, Subj=4.71, Vote=1, Conf=0.90, Co=0.61, WeightedVote=12.45
+  Avaliador 4: ExpEst=2, Freq=0.68, Acc=5.87, Subj=1.77, Vote=1, Conf=0.90, Co=0.04, WeightedVote=9.29
+  Avaliador 5: ExpEst=6, Freq=1.23, Acc=2.97, Subj=1.49, Vote=1, Conf=1.10, Co=0.31, WeightedVote=12.86
+  -> CDF: 1.0
+  -> IC: 0.5
+  -> coScoreTotal: 0.4297
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_01_09: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Verídico
+
+
+--- Rodada 8/100 ---
+  Avaliador 1: ExpEst=5, Freq=1.74, Acc=0.42, Subj=3.59, Vote=0, Conf=1.10, Co=0.97, WeightedVote=0.00
+  Avaliador 2: ExpEst=5, Freq=0.20, Acc=7.04, Subj=4.07, Vote=-2, Conf=0.90, Co=0.45, WeightedVote=-29.36
+  Avaliador 3: ExpEst=5, Freq=1.95, Acc=5.23, Subj=1.84, Vote=0, Conf=0.90, Co=0.59, WeightedVote=0.00
+  Avaliador 4: ExpEst=2, Freq=1.51, Acc=1.39, Subj=1.45, Vote=-1, Conf=0.90, Co=0.47, WeightedVote=-5.71
+  Avaliador 5: ExpEst=8, Freq=1.80, Acc=3.84, Subj=2.30, Vote=0, Conf=1.00, Co=0.38, WeightedVote=0.00
+  -> CDF: 0.2768
+  -> IC: 0.1364
+  -> coScoreTotal: 0.5704
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 9/100 ---
+  Avaliador 1: ExpEst=2, Freq=1.87, Acc=0.31, Subj=4.81, Vote=2, Conf=1.10, Co=0.96, WeightedVote=19.77
+  Avaliador 2: ExpEst=2, Freq=0.93, Acc=6.17, Subj=1.25, Vote=-2, Conf=1.00, Co=0.64, WeightedVote=-20.70
+  Avaliador 3: ExpEst=4, Freq=1.24, Acc=7.65, Subj=3.15, Vote=-2, Conf=1.10, Co=0.07, WeightedVote=-35.29
+  Avaliador 4: ExpEst=7, Freq=0.39, Acc=1.15, Subj=2.49, Vote=-2, Conf=1.00, Co=0.61, WeightedVote=-22.06
+  Avaliador 5: ExpEst=8, Freq=0.13, Acc=4.11, Subj=2.45, Vote=1, Conf=1.00, Co=0.00, WeightedVote=14.70
+  -> CDF: 0.2342
+  -> IC: 0.6818
+  -> coScoreTotal: 0.4569
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Inverídico
+
+
+--- Rodada 10/100 ---
+  Avaliador 1: ExpEst=2, Freq=1.36, Acc=0.37, Subj=4.24, Vote=2, Conf=1.10, Co=0.16, WeightedVote=17.53
+  Avaliador 2: ExpEst=4, Freq=1.20, Acc=3.12, Subj=1.89, Vote=1, Conf=1.10, Co=0.33, WeightedVote=11.23
+  Avaliador 3: ExpEst=8, Freq=0.44, Acc=0.85, Subj=2.97, Vote=0, Conf=0.90, Co=0.83, WeightedVote=0.00
+  Avaliador 4: ExpEst=2, Freq=0.14, Acc=3.18, Subj=1.63, Vote=-2, Conf=0.90, Co=0.61, WeightedVote=-12.52
+  Avaliador 5: ExpEst=5, Freq=1.16, Acc=2.65, Subj=4.65, Vote=1, Conf=1.10, Co=0.32, WeightedVote=14.81
+  -> CDF: 0.8657
+  -> IC: 0.2857
+  -> coScoreTotal: 0.4517
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Verídico
+
+
+--- Rodada 11/100 ---
+  Avaliador 1: ExpEst=8, Freq=0.58, Acc=5.70, Subj=3.98, Vote=0, Conf=1.10, Co=0.58, WeightedVote=0.00
+  Avaliador 2: ExpEst=4, Freq=0.97, Acc=6.12, Subj=2.28, Vote=0, Conf=0.90, Co=0.53, WeightedVote=0.00
+  Avaliador 3: ExpEst=2, Freq=0.15, Acc=0.88, Subj=4.59, Vote=0, Conf=1.00, Co=0.45, WeightedVote=0.00
+  Avaliador 4: ExpEst=2, Freq=0.42, Acc=3.39, Subj=3.94, Vote=1, Conf=0.90, Co=0.59, WeightedVote=8.78
+  Avaliador 5: ExpEst=8, Freq=0.94, Acc=2.76, Subj=1.33, Vote=-1, Conf=0.90, Co=0.04, WeightedVote=-11.73
+  -> CDF: 0.4898
+  -> IC: 0.0
+  -> coScoreTotal: 0.4392
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 12/100 ---
+  Avaliador 1: ExpEst=5, Freq=0.60, Acc=0.35, Subj=2.35, Vote=0, Conf=1.10, Co=0.29, WeightedVote=0.00
+  Avaliador 2: ExpEst=7, Freq=1.11, Acc=7.01, Subj=4.95, Vote=-1, Conf=1.10, Co=0.71, WeightedVote=-22.08
+  Avaliador 3: ExpEst=4, Freq=1.32, Acc=3.82, Subj=1.17, Vote=1, Conf=0.90, Co=0.91, WeightedVote=9.29
+  Avaliador 4: ExpEst=6, Freq=2.00, Acc=2.28, Subj=4.93, Vote=-2, Conf=0.90, Co=0.05, WeightedVote=-27.38
+  Avaliador 5: ExpEst=2, Freq=1.57, Acc=5.33, Subj=1.45, Vote=2, Conf=1.00, Co=0.96, WeightedVote=20.68
+  -> CDF: 0.3796
+  -> IC: 0.0
+  -> coScoreTotal: 0.5857
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 13/100 ---
+  Avaliador 1: ExpEst=3, Freq=0.86, Acc=6.25, Subj=3.61, Vote=-1, Conf=0.90, Co=0.49, WeightedVote=-12.35
+  Avaliador 2: ExpEst=3, Freq=0.41, Acc=2.15, Subj=2.33, Vote=2, Conf=1.00, Co=0.77, WeightedVote=15.79
+  Avaliador 3: ExpEst=7, Freq=1.10, Acc=2.85, Subj=1.31, Vote=-1, Conf=0.90, Co=0.57, WeightedVote=-11.04
+  Avaliador 4: ExpEst=3, Freq=1.79, Acc=4.01, Subj=1.10, Vote=-2, Conf=1.10, Co=0.57, WeightedVote=-21.78
+  Avaliador 5: ExpEst=2, Freq=1.48, Acc=0.84, Subj=4.69, Vote=-1, Conf=1.10, Co=0.26, WeightedVote=-9.92
+  -> CDF: 0.0899
+  -> IC: 0.4091
+  -> coScoreTotal: 0.5329
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 14/100 ---
+  Avaliador 1: ExpEst=2, Freq=0.34, Acc=1.98, Subj=4.84, Vote=-2, Conf=0.90, Co=1.00, WeightedVote=-16.49
+  Avaliador 2: ExpEst=8, Freq=0.04, Acc=7.17, Subj=1.48, Vote=0, Conf=1.10, Co=0.74, WeightedVote=0.00
+  Avaliador 3: ExpEst=5, Freq=0.48, Acc=0.12, Subj=1.34, Vote=-2, Conf=1.10, Co=0.03, WeightedVote=-15.27
+  Avaliador 4: ExpEst=7, Freq=1.54, Acc=5.84, Subj=4.25, Vote=0, Conf=1.10, Co=0.32, WeightedVote=0.00
+  Avaliador 5: ExpEst=4, Freq=1.24, Acc=3.77, Subj=2.70, Vote=1, Conf=1.10, Co=0.59, WeightedVote=12.88
+  -> CDF: 0.2783
+  -> IC: 0.3889
+  -> coScoreTotal: 0.5345
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 15/100 ---
+  Avaliador 1: ExpEst=5, Freq=1.62, Acc=5.93, Subj=4.78, Vote=0, Conf=1.00, Co=0.66, WeightedVote=0.00
+  Avaliador 2: ExpEst=6, Freq=0.45, Acc=2.84, Subj=1.26, Vote=1, Conf=0.90, Co=0.38, WeightedVote=9.49
+  Avaliador 3: ExpEst=7, Freq=0.48, Acc=3.93, Subj=3.37, Vote=-2, Conf=0.90, Co=0.90, WeightedVote=-26.61
+  Avaliador 4: ExpEst=5, Freq=0.40, Acc=4.68, Subj=4.17, Vote=-1, Conf=1.10, Co=0.95, WeightedVote=-15.68
+  Avaliador 5: ExpEst=3, Freq=1.79, Acc=1.36, Subj=1.24, Vote=2, Conf=1.10, Co=0.77, WeightedVote=16.26
+  -> CDF: 0.4026
+  -> IC: 0.0
+  -> coScoreTotal: 0.7333
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 16/100 ---
+  Avaliador 1: ExpEst=6, Freq=1.22, Acc=1.28, Subj=3.04, Vote=-1, Conf=0.90, Co=0.25, WeightedVote=-10.38
+  Avaliador 2: ExpEst=4, Freq=0.87, Acc=0.71, Subj=4.33, Vote=0, Conf=0.90, Co=0.32, WeightedVote=0.00
+  Avaliador 3: ExpEst=8, Freq=1.06, Acc=3.58, Subj=2.44, Vote=1, Conf=1.00, Co=0.28, WeightedVote=15.07
+  Avaliador 4: ExpEst=4, Freq=1.92, Acc=3.73, Subj=4.04, Vote=-2, Conf=1.10, Co=0.57, WeightedVote=-30.13
+  Avaliador 5: ExpEst=8, Freq=0.95, Acc=4.06, Subj=2.01, Vote=1, Conf=1.00, Co=0.64, WeightedVote=15.02
+  -> CDF: 0.4841
+  -> IC: 0.0714
+  -> coScoreTotal: 0.4103
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 17/100 ---
+  Avaliador 1: ExpEst=4, Freq=0.31, Acc=1.44, Subj=3.54, Vote=-1, Conf=0.90, Co=0.93, WeightedVote=-8.37
+  Avaliador 2: ExpEst=5, Freq=1.09, Acc=5.38, Subj=3.87, Vote=-2, Conf=0.90, Co=0.27, WeightedVote=-27.62
+  Avaliador 3: ExpEst=4, Freq=1.22, Acc=0.60, Subj=1.20, Vote=0, Conf=0.90, Co=0.53, WeightedVote=0.00
+  Avaliador 4: ExpEst=7, Freq=1.71, Acc=2.53, Subj=4.75, Vote=-2, Conf=0.90, Co=0.91, WeightedVote=-28.77
+  Avaliador 5: ExpEst=3, Freq=1.19, Acc=2.58, Subj=2.86, Vote=0, Conf=1.00, Co=0.66, WeightedVote=0.00
+  -> CDF: 0.069
+  -> IC: 0.5
+  -> coScoreTotal: 0.662
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 18/100 ---
+  Avaliador 1: ExpEst=6, Freq=0.16, Acc=0.23, Subj=2.45, Vote=0, Conf=0.90, Co=0.39, WeightedVote=0.00
+  Avaliador 2: ExpEst=6, Freq=1.72, Acc=7.76, Subj=2.09, Vote=0, Conf=0.90, Co=0.33, WeightedVote=0.00
+  Avaliador 3: ExpEst=6, Freq=1.76, Acc=4.00, Subj=2.68, Vote=0, Conf=0.90, Co=0.35, WeightedVote=0.00
+  Avaliador 4: ExpEst=8, Freq=1.50, Acc=4.34, Subj=1.02, Vote=-2, Conf=0.90, Co=0.98, WeightedVote=-26.75
+  Avaliador 5: ExpEst=7, Freq=0.52, Acc=1.06, Subj=4.53, Vote=-1, Conf=0.90, Co=0.09, WeightedVote=-11.80
+  -> CDF: 0.19
+  -> IC: 0.1364
+  -> coScoreTotal: 0.4252
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 19/100 ---
+  Avaliador 1: ExpEst=8, Freq=1.25, Acc=3.68, Subj=4.56, Vote=-2, Conf=0.90, Co=0.14, WeightedVote=-31.46
+  Avaliador 2: ExpEst=6, Freq=0.47, Acc=3.83, Subj=3.86, Vote=1, Conf=1.10, Co=0.96, WeightedVote=15.58
+  Avaliador 3: ExpEst=6, Freq=1.77, Acc=2.86, Subj=2.15, Vote=1, Conf=1.00, Co=0.05, WeightedVote=12.79
+  Avaliador 4: ExpEst=6, Freq=0.73, Acc=0.44, Subj=3.33, Vote=-2, Conf=0.90, Co=0.06, WeightedVote=-18.90
+  Avaliador 5: ExpEst=7, Freq=1.34, Acc=2.49, Subj=1.19, Vote=-2, Conf=1.10, Co=0.03, WeightedVote=-26.45
+  -> CDF: 0.1908
+  -> IC: 0.5385
+  -> coScoreTotal: 0.2493
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Inverídico
+
+
+--- Rodada 20/100 ---
+  Avaliador 1: ExpEst=8, Freq=0.06, Acc=1.15, Subj=3.56, Vote=2, Conf=1.10, Co=0.56, WeightedVote=28.09
+  Avaliador 2: ExpEst=5, Freq=1.75, Acc=2.83, Subj=4.83, Vote=-1, Conf=0.90, Co=0.22, WeightedVote=-12.97
+  Avaliador 3: ExpEst=3, Freq=1.21, Acc=3.66, Subj=1.32, Vote=0, Conf=0.90, Co=0.26, WeightedVote=0.00
+  Avaliador 4: ExpEst=2, Freq=1.98, Acc=1.44, Subj=4.29, Vote=-2, Conf=1.10, Co=0.98, WeightedVote=-21.37
+  Avaliador 5: ExpEst=8, Freq=0.86, Acc=4.31, Subj=1.93, Vote=2, Conf=0.90, Co=0.69, WeightedVote=27.18
+  -> CDF: 0.611
+  -> IC: 0.3571
+  -> coScoreTotal: 0.5417
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 21/100 ---
+  Avaliador 1: ExpEst=6, Freq=0.60, Acc=5.80, Subj=2.70, Vote=2, Conf=1.00, Co=0.38, WeightedVote=30.21
+  Avaliador 2: ExpEst=3, Freq=0.19, Acc=6.25, Subj=4.96, Vote=2, Conf=0.90, Co=0.89, WeightedVote=25.93
+  Avaliador 3: ExpEst=2, Freq=0.13, Acc=0.72, Subj=2.38, Vote=1, Conf=1.10, Co=0.70, WeightedVote=5.76
+  Avaliador 4: ExpEst=6, Freq=0.86, Acc=1.26, Subj=1.38, Vote=-1, Conf=1.10, Co=0.54, WeightedVote=-10.44
+  Avaliador 5: ExpEst=8, Freq=1.59, Acc=2.01, Subj=3.64, Vote=-2, Conf=1.10, Co=0.70, WeightedVote=-33.53
+  -> CDF: 0.6375
+  -> IC: 0.4286
+  -> coScoreTotal: 0.6436
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 22/100 ---
+  Avaliador 1: ExpEst=7, Freq=1.66, Acc=5.62, Subj=1.24, Vote=0, Conf=1.10, Co=0.86, WeightedVote=0.00
+  Avaliador 2: ExpEst=7, Freq=0.27, Acc=2.73, Subj=1.46, Vote=-2, Conf=1.10, Co=0.64, WeightedVote=-25.23
+  Avaliador 3: ExpEst=3, Freq=1.83, Acc=2.99, Subj=1.93, Vote=-2, Conf=1.10, Co=0.64, WeightedVote=-21.44
+  Avaliador 4: ExpEst=6, Freq=0.25, Acc=2.33, Subj=3.04, Vote=2, Conf=1.00, Co=0.33, WeightedVote=23.24
+  Avaliador 5: ExpEst=5, Freq=1.62, Acc=4.46, Subj=1.53, Vote=2, Conf=1.10, Co=0.21, WeightedVote=27.75
+  -> CDF: 0.5196
+  -> IC: 0.0
+  -> coScoreTotal: 0.5359
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 23/100 ---
+  Avaliador 1: ExpEst=6, Freq=0.61, Acc=3.41, Subj=3.21, Vote=2, Conf=0.90, Co=0.12, WeightedVote=23.81
+  Avaliador 2: ExpEst=3, Freq=1.05, Acc=8.00, Subj=2.78, Vote=0, Conf=1.00, Co=0.54, WeightedVote=0.00
+  Avaliador 3: ExpEst=2, Freq=1.24, Acc=6.96, Subj=1.21, Vote=0, Conf=0.90, Co=0.79, WeightedVote=0.00
+  Avaliador 4: ExpEst=8, Freq=1.88, Acc=5.73, Subj=2.78, Vote=1, Conf=0.90, Co=0.45, WeightedVote=16.56
+  Avaliador 5: ExpEst=7, Freq=1.34, Acc=0.56, Subj=4.22, Vote=1, Conf=1.10, Co=0.57, WeightedVote=14.43
+  -> CDF: 0.9685
+  -> IC: 0.3333
+  -> coScoreTotal: 0.4957
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_01_09: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Verídico
+
+
+--- Rodada 24/100 ---
+  Avaliador 1: ExpEst=5, Freq=1.85, Acc=3.63, Subj=2.00, Vote=1, Conf=0.90, Co=0.66, WeightedVote=11.23
+  Avaliador 2: ExpEst=3, Freq=0.05, Acc=7.84, Subj=1.43, Vote=2, Conf=1.00, Co=0.42, WeightedVote=24.62
+  Avaliador 3: ExpEst=7, Freq=0.62, Acc=2.68, Subj=1.51, Vote=1, Conf=1.00, Co=0.86, WeightedVote=11.81
+  Avaliador 4: ExpEst=6, Freq=0.23, Acc=2.72, Subj=2.77, Vote=-1, Conf=1.10, Co=0.17, WeightedVote=-12.90
+  Avaliador 5: ExpEst=7, Freq=0.74, Acc=0.20, Subj=1.24, Vote=0, Conf=1.10, Co=0.35, WeightedVote=0.00
+  -> CDF: 0.832
+  -> IC: 0.3571
+  -> coScoreTotal: 0.4901
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Verídico
+
+
+--- Rodada 25/100 ---
+  Avaliador 1: ExpEst=6, Freq=0.69, Acc=2.81, Subj=1.40, Vote=2, Conf=1.10, Co=0.10, WeightedVote=24.00
+  Avaliador 2: ExpEst=6, Freq=1.87, Acc=0.56, Subj=4.75, Vote=-2, Conf=1.10, Co=0.84, WeightedVote=-29.01
+  Avaliador 3: ExpEst=7, Freq=1.58, Acc=4.14, Subj=1.54, Vote=1, Conf=0.90, Co=0.11, WeightedVote=12.83
+  Avaliador 4: ExpEst=8, Freq=1.95, Acc=7.59, Subj=4.84, Vote=2, Conf=1.00, Co=0.15, WeightedVote=44.78
+  Avaliador 5: ExpEst=4, Freq=0.13, Acc=7.80, Subj=4.22, Vote=2, Conf=0.90, Co=0.10, WeightedVote=29.05
+  -> CDF: 0.9085
+  -> IC: 0.7727
+  -> coScoreTotal: 0.2612
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_01_09: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Verídico
+
+
+--- Rodada 26/100 ---
+  Avaliador 1: ExpEst=7, Freq=0.71, Acc=7.35, Subj=1.30, Vote=-2, Conf=1.10, Co=0.45, WeightedVote=-36.00
+  Avaliador 2: ExpEst=3, Freq=0.16, Acc=3.24, Subj=3.50, Vote=0, Conf=1.00, Co=0.03, WeightedVote=0.00
+  Avaliador 3: ExpEst=3, Freq=1.49, Acc=4.37, Subj=1.17, Vote=-1, Conf=1.10, Co=0.89, WeightedVote=-11.03
+  Avaliador 4: ExpEst=5, Freq=0.81, Acc=4.39, Subj=1.01, Vote=-2, Conf=1.00, Co=0.20, WeightedVote=-22.40
+  Avaliador 5: ExpEst=4, Freq=1.24, Acc=4.67, Subj=3.51, Vote=-2, Conf=0.90, Co=0.05, WeightedVote=-24.15
+  -> CDF: 0.0062
+  -> IC: 0.8636
+  -> coScoreTotal: 0.3249
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 27/100 ---
+  Avaliador 1: ExpEst=7, Freq=1.02, Acc=7.10, Subj=3.26, Vote=2, Conf=1.00, Co=0.11, WeightedVote=36.76
+  Avaliador 2: ExpEst=2, Freq=1.06, Acc=6.35, Subj=4.24, Vote=1, Conf=0.90, Co=0.26, WeightedVote=12.29
+  Avaliador 3: ExpEst=2, Freq=1.37, Acc=5.34, Subj=2.80, Vote=2, Conf=1.10, Co=0.74, WeightedVote=25.32
+  Avaliador 4: ExpEst=3, Freq=0.66, Acc=5.12, Subj=1.33, Vote=0, Conf=1.00, Co=0.51, WeightedVote=0.00
+  Avaliador 5: ExpEst=7, Freq=0.59, Acc=6.59, Subj=1.68, Vote=0, Conf=0.90, Co=0.91, WeightedVote=0.00
+  -> CDF: 0.9363
+  -> IC: 0.5
+  -> coScoreTotal: 0.508
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_01_09: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Verídico
+
+
+--- Rodada 28/100 ---
+  Avaliador 1: ExpEst=2, Freq=1.44, Acc=5.84, Subj=3.47, Vote=2, Conf=0.90, Co=0.94, WeightedVote=22.94
+  Avaliador 2: ExpEst=7, Freq=1.69, Acc=7.48, Subj=4.21, Vote=-1, Conf=0.90, Co=0.34, WeightedVote=-18.34
+  Avaliador 3: ExpEst=2, Freq=0.12, Acc=4.71, Subj=1.90, Vote=-2, Conf=1.10, Co=0.18, WeightedVote=-19.20
+  Avaliador 4: ExpEst=3, Freq=0.54, Acc=5.34, Subj=4.83, Vote=-1, Conf=1.00, Co=0.06, WeightedVote=-13.71
+  Avaliador 5: ExpEst=4, Freq=0.97, Acc=4.82, Subj=3.37, Vote=1, Conf=1.10, Co=0.41, WeightedVote=14.47
+  -> CDF: 0.3431
+  -> IC: 0.2143
+  -> coScoreTotal: 0.3851
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 29/100 ---
+  Avaliador 1: ExpEst=5, Freq=0.23, Acc=1.68, Subj=4.01, Vote=2, Conf=1.10, Co=0.74, WeightedVote=24.03
+  Avaliador 2: ExpEst=5, Freq=1.22, Acc=6.49, Subj=2.98, Vote=-2, Conf=0.90, Co=0.71, WeightedVote=-28.26
+  Avaliador 3: ExpEst=5, Freq=0.18, Acc=5.35, Subj=2.18, Vote=-1, Conf=1.00, Co=0.08, WeightedVote=-12.71
+  Avaliador 4: ExpEst=8, Freq=0.94, Acc=6.66, Subj=1.01, Vote=0, Conf=1.00, Co=0.12, WeightedVote=0.00
+  Avaliador 5: ExpEst=5, Freq=1.05, Acc=4.66, Subj=4.42, Vote=2, Conf=0.90, Co=0.53, WeightedVote=27.24
+  -> CDF: 0.5695
+  -> IC: 0.3571
+  -> coScoreTotal: 0.4355
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 30/100 ---
+  Avaliador 1: ExpEst=3, Freq=1.69, Acc=5.84, Subj=2.10, Vote=2, Conf=1.00, Co=0.63, WeightedVote=25.25
+  Avaliador 2: ExpEst=8, Freq=1.00, Acc=0.61, Subj=3.57, Vote=0, Conf=1.00, Co=0.33, WeightedVote=0.00
+  Avaliador 3: ExpEst=7, Freq=1.84, Acc=0.30, Subj=2.37, Vote=2, Conf=1.10, Co=0.06, WeightedVote=25.32
+  Avaliador 4: ExpEst=3, Freq=0.92, Acc=3.60, Subj=1.81, Vote=1, Conf=1.10, Co=0.19, WeightedVote=10.27
+  Avaliador 5: ExpEst=3, Freq=1.36, Acc=7.12, Subj=1.51, Vote=0, Conf=1.10, Co=0.57, WeightedVote=0.00
+  -> CDF: 0.9486
+  -> IC: 0.5
+  -> coScoreTotal: 0.357
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_01_09: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Verídico
+
+
+--- Rodada 31/100 ---
+  Avaliador 1: ExpEst=7, Freq=1.18, Acc=5.80, Subj=1.37, Vote=-1, Conf=1.10, Co=0.04, WeightedVote=-16.88
+  Avaliador 2: ExpEst=4, Freq=0.01, Acc=5.98, Subj=1.89, Vote=-1, Conf=1.10, Co=0.07, WeightedVote=-13.07
+  Avaliador 3: ExpEst=2, Freq=1.84, Acc=0.57, Subj=4.30, Vote=2, Conf=0.90, Co=0.55, WeightedVote=15.67
+  Avaliador 4: ExpEst=2, Freq=1.11, Acc=6.93, Subj=1.23, Vote=1, Conf=1.10, Co=0.43, WeightedVote=12.41
+  Avaliador 5: ExpEst=5, Freq=0.90, Acc=1.00, Subj=3.38, Vote=1, Conf=1.00, Co=0.03, WeightedVote=10.28
+  -> CDF: 0.6313
+  -> IC: 0.1111
+  -> coScoreTotal: 0.2251
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 32/100 ---
+  Avaliador 1: ExpEst=4, Freq=1.86, Acc=7.30, Subj=3.88, Vote=1, Conf=0.90, Co=0.97, WeightedVote=15.34
+  Avaliador 2: ExpEst=4, Freq=0.47, Acc=0.63, Subj=4.85, Vote=-1, Conf=0.90, Co=0.68, WeightedVote=-8.96
+  Avaliador 3: ExpEst=2, Freq=1.96, Acc=5.68, Subj=3.97, Vote=-2, Conf=0.90, Co=0.68, WeightedVote=-24.51
+  Avaliador 4: ExpEst=5, Freq=0.22, Acc=6.89, Subj=2.46, Vote=2, Conf=1.00, Co=0.57, WeightedVote=29.13
+  Avaliador 5: ExpEst=7, Freq=0.60, Acc=2.46, Subj=3.13, Vote=0, Conf=0.90, Co=0.00, WeightedVote=0.00
+  -> CDF: 0.5678
+  -> IC: 0.0
+  -> coScoreTotal: 0.5794
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 33/100 ---
+  Avaliador 1: ExpEst=7, Freq=0.28, Acc=0.05, Subj=3.21, Vote=1, Conf=1.10, Co=0.82, WeightedVote=11.60
+  Avaliador 2: ExpEst=7, Freq=1.15, Acc=0.29, Subj=4.18, Vote=0, Conf=1.00, Co=0.54, WeightedVote=0.00
+  Avaliador 3: ExpEst=4, Freq=0.65, Acc=3.95, Subj=1.01, Vote=-2, Conf=1.00, Co=0.62, WeightedVote=-19.21
+  Avaliador 4: ExpEst=6, Freq=0.58, Acc=4.44, Subj=2.19, Vote=0, Conf=1.10, Co=0.98, WeightedVote=0.00
+  Avaliador 5: ExpEst=8, Freq=0.91, Acc=0.63, Subj=4.41, Vote=-2, Conf=1.00, Co=0.46, WeightedVote=-27.88
+  -> CDF: 0.2435
+  -> IC: 0.3889
+  -> coScoreTotal: 0.6825
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 34/100 ---
+  Avaliador 1: ExpEst=7, Freq=1.41, Acc=1.36, Subj=4.71, Vote=-1, Conf=0.90, Co=0.17, WeightedVote=-13.03
+  Avaliador 2: ExpEst=6, Freq=0.80, Acc=4.14, Subj=3.75, Vote=0, Conf=1.10, Co=0.91, WeightedVote=0.00
+  Avaliador 3: ExpEst=2, Freq=0.98, Acc=3.88, Subj=1.80, Vote=1, Conf=1.00, Co=0.88, WeightedVote=8.66
+  Avaliador 4: ExpEst=4, Freq=0.11, Acc=7.81, Subj=4.48, Vote=1, Conf=1.10, Co=0.54, WeightedVote=18.05
+  Avaliador 5: ExpEst=2, Freq=1.59, Acc=0.93, Subj=3.14, Vote=0, Conf=1.10, Co=0.54, WeightedVote=0.00
+  -> CDF: 0.6662
+  -> IC: 0.1667
+  -> coScoreTotal: 0.6089
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 35/100 ---
+  Avaliador 1: ExpEst=6, Freq=0.17, Acc=3.98, Subj=3.14, Vote=0, Conf=0.90, Co=0.52, WeightedVote=0.00
+  Avaliador 2: ExpEst=5, Freq=0.39, Acc=5.93, Subj=3.86, Vote=0, Conf=1.00, Co=0.25, WeightedVote=0.00
+  Avaliador 3: ExpEst=5, Freq=1.19, Acc=6.57, Subj=3.89, Vote=-2, Conf=1.10, Co=0.73, WeightedVote=-36.64
+  Avaliador 4: ExpEst=3, Freq=1.19, Acc=3.68, Subj=1.13, Vote=-2, Conf=0.90, Co=0.84, WeightedVote=-16.20
+  Avaliador 5: ExpEst=8, Freq=1.62, Acc=0.20, Subj=2.63, Vote=0, Conf=0.90, Co=0.06, WeightedVote=0.00
+  -> CDF: 0.1898
+  -> IC: 0.3077
+  -> coScoreTotal: 0.4803
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 36/100 ---
+  Avaliador 1: ExpEst=2, Freq=0.15, Acc=1.81, Subj=1.98, Vote=-1, Conf=1.10, Co=0.60, WeightedVote=-6.54
+  Avaliador 2: ExpEst=2, Freq=1.56, Acc=3.03, Subj=3.12, Vote=1, Conf=0.90, Co=0.22, WeightedVote=8.75
+  Avaliador 3: ExpEst=2, Freq=1.34, Acc=4.42, Subj=4.03, Vote=0, Conf=0.90, Co=0.99, WeightedVote=0.00
+  Avaliador 4: ExpEst=4, Freq=0.41, Acc=6.42, Subj=2.65, Vote=-2, Conf=1.00, Co=0.93, WeightedVote=-26.95
+  Avaliador 5: ExpEst=5, Freq=0.02, Acc=5.29, Subj=1.09, Vote=0, Conf=1.10, Co=0.79, WeightedVote=0.00
+  -> CDF: 0.3471
+  -> IC: 0.1429
+  -> coScoreTotal: 0.7062
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 37/100 ---
+  Avaliador 1: ExpEst=2, Freq=1.15, Acc=3.97, Subj=2.86, Vote=-1, Conf=1.10, Co=0.76, WeightedVote=-10.98
+  Avaliador 2: ExpEst=4, Freq=0.61, Acc=2.52, Subj=3.75, Vote=-1, Conf=0.90, Co=0.53, WeightedVote=-9.79
+  Avaliador 3: ExpEst=2, Freq=0.94, Acc=2.92, Subj=3.58, Vote=0, Conf=0.90, Co=0.31, WeightedVote=0.00
+  Avaliador 4: ExpEst=3, Freq=1.23, Acc=3.61, Subj=3.35, Vote=-1, Conf=1.00, Co=0.78, WeightedVote=-11.19
+  Avaliador 5: ExpEst=7, Freq=0.94, Acc=7.54, Subj=2.39, Vote=-1, Conf=1.00, Co=0.67, WeightedVote=-17.86
+  -> CDF: 0.0014
+  -> IC: 0.4706
+  -> coScoreTotal: 0.6078
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 38/100 ---
+  Avaliador 1: ExpEst=2, Freq=0.20, Acc=6.83, Subj=1.08, Vote=0, Conf=0.90, Co=0.76, WeightedVote=0.00
+  Avaliador 2: ExpEst=8, Freq=1.44, Acc=1.39, Subj=4.08, Vote=2, Conf=0.90, Co=0.15, WeightedVote=26.84
+  Avaliador 3: ExpEst=5, Freq=0.05, Acc=2.44, Subj=4.41, Vote=0, Conf=0.90, Co=0.31, WeightedVote=0.00
+  Avaliador 4: ExpEst=4, Freq=1.26, Acc=0.22, Subj=3.93, Vote=-1, Conf=0.90, Co=0.59, WeightedVote=-8.47
+  Avaliador 5: ExpEst=5, Freq=1.62, Acc=7.80, Subj=4.73, Vote=1, Conf=1.10, Co=0.76, WeightedVote=21.06
+  -> CDF: 0.7881
+  -> IC: 0.1429
+  -> coScoreTotal: 0.5138
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 39/100 ---
+  Avaliador 1: ExpEst=6, Freq=0.26, Acc=4.21, Subj=4.28, Vote=-2, Conf=0.90, Co=0.88, WeightedVote=-26.55
+  Avaliador 2: ExpEst=5, Freq=0.58, Acc=5.80, Subj=2.04, Vote=2, Conf=0.90, Co=0.74, WeightedVote=24.16
+  Avaliador 3: ExpEst=8, Freq=0.22, Acc=6.79, Subj=3.13, Vote=0, Conf=1.00, Co=0.75, WeightedVote=0.00
+  Avaliador 4: ExpEst=3, Freq=0.33, Acc=0.62, Subj=2.47, Vote=0, Conf=1.10, Co=0.52, WeightedVote=0.00
+  Avaliador 5: ExpEst=6, Freq=1.71, Acc=3.82, Subj=4.35, Vote=2, Conf=1.00, Co=0.00, WeightedVote=31.77
+  -> CDF: 0.6991
+  -> IC: 0.3333
+  -> coScoreTotal: 0.5782
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 40/100 ---
+  Avaliador 1: ExpEst=5, Freq=0.61, Acc=6.26, Subj=2.54, Vote=-2, Conf=0.90, Co=0.81, WeightedVote=-25.94
+  Avaliador 2: ExpEst=7, Freq=1.96, Acc=6.54, Subj=1.70, Vote=-2, Conf=0.90, Co=0.69, WeightedVote=-30.96
+  Avaliador 3: ExpEst=8, Freq=1.13, Acc=2.77, Subj=4.31, Vote=-2, Conf=1.00, Co=0.60, WeightedVote=-32.42
+  Avaliador 4: ExpEst=2, Freq=0.39, Acc=0.24, Subj=4.56, Vote=2, Conf=1.10, Co=0.60, WeightedVote=15.83
+  Avaliador 5: ExpEst=7, Freq=1.75, Acc=0.98, Subj=2.92, Vote=0, Conf=1.10, Co=0.96, WeightedVote=0.00
+  -> CDF: 0.0809
+  -> IC: 0.7273
+  -> coScoreTotal: 0.7319
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 41/100 ---
+  Avaliador 1: ExpEst=2, Freq=0.27, Acc=3.19, Subj=4.47, Vote=0, Conf=1.10, Co=0.06, WeightedVote=0.00
+  Avaliador 2: ExpEst=6, Freq=1.24, Acc=7.34, Subj=4.69, Vote=-2, Conf=1.00, Co=0.27, WeightedVote=-38.54
+  Avaliador 3: ExpEst=7, Freq=1.42, Acc=7.89, Subj=2.40, Vote=-2, Conf=1.10, Co=0.26, WeightedVote=-41.16
+  Avaliador 4: ExpEst=4, Freq=1.61, Acc=4.83, Subj=1.28, Vote=-2, Conf=1.10, Co=0.36, WeightedVote=-25.80
+  Avaliador 5: ExpEst=3, Freq=1.78, Acc=7.40, Subj=3.64, Vote=0, Conf=1.00, Co=0.96, WeightedVote=0.00
+  -> CDF: 0.0283
+  -> IC: 0.6923
+  -> coScoreTotal: 0.3809
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 42/100 ---
+  Avaliador 1: ExpEst=6, Freq=0.79, Acc=4.17, Subj=4.14, Vote=2, Conf=0.90, Co=0.73, WeightedVote=27.18
+  Avaliador 2: ExpEst=3, Freq=1.49, Acc=0.42, Subj=1.02, Vote=0, Conf=0.90, Co=0.71, WeightedVote=0.00
+  Avaliador 3: ExpEst=8, Freq=1.35, Acc=2.47, Subj=1.96, Vote=-1, Conf=0.90, Co=0.33, WeightedVote=-12.39
+  Avaliador 4: ExpEst=8, Freq=0.92, Acc=1.38, Subj=2.14, Vote=1, Conf=0.90, Co=0.03, WeightedVote=11.19
+  Avaliador 5: ExpEst=8, Freq=1.93, Acc=6.53, Subj=2.88, Vote=1, Conf=0.90, Co=0.96, WeightedVote=17.41
+  -> CDF: 0.8601
+  -> IC: 0.3571
+  -> coScoreTotal: 0.5531
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Verídico
+
+
+--- Rodada 43/100 ---
+  Avaliador 1: ExpEst=6, Freq=0.12, Acc=5.49, Subj=1.12, Vote=-2, Conf=1.10, Co=0.98, WeightedVote=-28.00
+  Avaliador 2: ExpEst=2, Freq=0.82, Acc=7.54, Subj=2.45, Vote=-2, Conf=1.00, Co=0.56, WeightedVote=-25.63
+  Avaliador 3: ExpEst=2, Freq=0.12, Acc=2.20, Subj=2.01, Vote=0, Conf=1.00, Co=0.08, WeightedVote=0.00
+  Avaliador 4: ExpEst=5, Freq=0.18, Acc=0.54, Subj=1.90, Vote=0, Conf=1.10, Co=0.05, WeightedVote=0.00
+  Avaliador 5: ExpEst=8, Freq=1.51, Acc=3.51, Subj=4.65, Vote=-2, Conf=0.90, Co=0.26, WeightedVote=-31.82
+  -> CDF: 0.0212
+  -> IC: 0.6923
+  -> coScoreTotal: 0.3843
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 44/100 ---
+  Avaliador 1: ExpEst=5, Freq=0.50, Acc=2.83, Subj=3.96, Vote=-1, Conf=0.90, Co=0.98, WeightedVote=-11.06
+  Avaliador 2: ExpEst=6, Freq=0.48, Acc=2.24, Subj=1.13, Vote=2, Conf=1.10, Co=0.90, WeightedVote=21.67
+  Avaliador 3: ExpEst=8, Freq=1.21, Acc=3.00, Subj=3.47, Vote=2, Conf=1.10, Co=0.48, WeightedVote=34.51
+  Avaliador 4: ExpEst=2, Freq=1.37, Acc=3.45, Subj=2.67, Vote=0, Conf=1.00, Co=0.91, WeightedVote=0.00
+  Avaliador 5: ExpEst=7, Freq=0.11, Acc=4.70, Subj=2.05, Vote=0, Conf=1.10, Co=0.89, WeightedVote=0.00
+  -> CDF: 0.7662
+  -> IC: 0.3889
+  -> coScoreTotal: 0.8333
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Verídico
+
+
+--- Rodada 45/100 ---
+  Avaliador 1: ExpEst=2, Freq=1.81, Acc=6.20, Subj=2.90, Vote=-1, Conf=1.00, Co=0.69, WeightedVote=-12.91
+  Avaliador 2: ExpEst=5, Freq=0.03, Acc=6.89, Subj=1.92, Vote=1, Conf=1.00, Co=0.48, WeightedVote=13.84
+  Avaliador 3: ExpEst=7, Freq=1.11, Acc=3.30, Subj=1.52, Vote=-2, Conf=1.10, Co=0.44, WeightedVote=-28.44
+  Avaliador 4: ExpEst=2, Freq=1.05, Acc=2.73, Subj=1.68, Vote=2, Conf=1.00, Co=0.68, WeightedVote=14.92
+  Avaliador 5: ExpEst=2, Freq=0.23, Acc=7.21, Subj=4.49, Vote=0, Conf=1.10, Co=0.88, WeightedVote=0.00
+  -> CDF: 0.4526
+  -> IC: 0.0
+  -> coScoreTotal: 0.6334
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 46/100 ---
+  Avaliador 1: ExpEst=4, Freq=1.26, Acc=1.02, Subj=3.98, Vote=0, Conf=1.10, Co=0.99, WeightedVote=0.00
+  Avaliador 2: ExpEst=4, Freq=1.65, Acc=3.52, Subj=2.18, Vote=2, Conf=1.00, Co=0.75, WeightedVote=22.70
+  Avaliador 3: ExpEst=5, Freq=1.86, Acc=6.23, Subj=4.55, Vote=2, Conf=1.10, Co=0.05, WeightedVote=38.82
+  Avaliador 4: ExpEst=6, Freq=0.75, Acc=6.21, Subj=1.71, Vote=-2, Conf=1.00, Co=0.58, WeightedVote=-29.33
+  Avaliador 5: ExpEst=4, Freq=1.71, Acc=0.63, Subj=3.89, Vote=1, Conf=1.00, Co=0.89, WeightedVote=10.24
+  -> CDF: 0.7625
+  -> IC: 0.5
+  -> coScoreTotal: 0.6525
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Verídico
+
+
+--- Rodada 47/100 ---
+  Avaliador 1: ExpEst=3, Freq=1.34, Acc=2.30, Subj=1.16, Vote=1, Conf=1.10, Co=0.68, WeightedVote=8.58
+  Avaliador 2: ExpEst=4, Freq=0.33, Acc=4.44, Subj=3.66, Vote=1, Conf=1.00, Co=0.27, WeightedVote=12.43
+  Avaliador 3: ExpEst=2, Freq=1.66, Acc=2.84, Subj=1.73, Vote=-2, Conf=1.00, Co=0.32, WeightedVote=-16.46
+  Avaliador 4: ExpEst=3, Freq=0.28, Acc=5.97, Subj=3.82, Vote=-1, Conf=1.10, Co=0.19, WeightedVote=-14.38
+  Avaliador 5: ExpEst=4, Freq=1.72, Acc=2.88, Subj=4.86, Vote=2, Conf=0.90, Co=0.97, WeightedVote=24.23
+  -> CDF: 0.6286
+  -> IC: 0.2143
+  -> coScoreTotal: 0.4862
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 48/100 ---
+  Avaliador 1: ExpEst=3, Freq=1.11, Acc=0.37, Subj=3.53, Vote=0, Conf=0.90, Co=0.87, WeightedVote=0.00
+  Avaliador 2: ExpEst=5, Freq=1.30, Acc=3.12, Subj=2.68, Vote=2, Conf=0.90, Co=0.23, WeightedVote=21.78
+  Avaliador 3: ExpEst=5, Freq=0.18, Acc=2.60, Subj=3.30, Vote=-2, Conf=1.10, Co=0.93, WeightedVote=-24.36
+  Avaliador 4: ExpEst=4, Freq=1.16, Acc=1.59, Subj=4.14, Vote=2, Conf=1.10, Co=0.22, WeightedVote=23.96
+  Avaliador 5: ExpEst=6, Freq=0.06, Acc=4.75, Subj=2.08, Vote=1, Conf=0.90, Co=0.77, WeightedVote=11.60
+  -> CDF: 0.7984
+  -> IC: 0.5
+  -> coScoreTotal: 0.6042
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Verídico
+
+
+--- Rodada 49/100 ---
+  Avaliador 1: ExpEst=3, Freq=1.22, Acc=0.31, Subj=3.85, Vote=0, Conf=1.00, Co=0.82, WeightedVote=0.00
+  Avaliador 2: ExpEst=2, Freq=1.92, Acc=6.19, Subj=3.69, Vote=-2, Conf=0.90, Co=0.69, WeightedVote=-24.84
+  Avaliador 3: ExpEst=5, Freq=0.21, Acc=3.77, Subj=4.30, Vote=-2, Conf=1.10, Co=0.48, WeightedVote=-29.23
+  Avaliador 4: ExpEst=4, Freq=0.45, Acc=3.84, Subj=1.80, Vote=-1, Conf=1.00, Co=0.90, WeightedVote=-10.09
+  Avaliador 5: ExpEst=4, Freq=1.63, Acc=2.03, Subj=4.25, Vote=1, Conf=1.10, Co=0.89, WeightedVote=13.09
+  -> CDF: 0.1379
+  -> IC: 0.5714
+  -> coScoreTotal: 0.7567
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 50/100 ---
+  Avaliador 1: ExpEst=5, Freq=0.28, Acc=7.82, Subj=1.73, Vote=2, Conf=0.90, Co=0.91, WeightedVote=26.70
+  Avaliador 2: ExpEst=2, Freq=1.59, Acc=7.50, Subj=1.55, Vote=1, Conf=0.90, Co=0.26, WeightedVote=11.37
+  Avaliador 3: ExpEst=4, Freq=1.72, Acc=2.64, Subj=3.47, Vote=-1, Conf=1.00, Co=0.10, WeightedVote=-11.84
+  Avaliador 4: ExpEst=5, Freq=1.96, Acc=6.34, Subj=3.65, Vote=2, Conf=1.00, Co=0.02, WeightedVote=33.93
+  Avaliador 5: ExpEst=6, Freq=0.34, Acc=3.28, Subj=3.72, Vote=2, Conf=1.10, Co=0.97, WeightedVote=29.34
+  -> CDF: 0.9771
+  -> IC: 0.8182
+  -> coScoreTotal: 0.4537
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_01_09: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Verídico
+
+
+--- Rodada 51/100 ---
+  Avaliador 1: ExpEst=6, Freq=1.12, Acc=7.26, Subj=3.93, Vote=0, Conf=1.00, Co=0.51, WeightedVote=0.00
+  Avaliador 2: ExpEst=7, Freq=1.78, Acc=1.49, Subj=2.14, Vote=0, Conf=0.90, Co=0.28, WeightedVote=0.00
+  Avaliador 3: ExpEst=7, Freq=1.62, Acc=1.01, Subj=3.20, Vote=2, Conf=0.90, Co=0.12, WeightedVote=23.10
+  Avaliador 4: ExpEst=7, Freq=0.13, Acc=7.33, Subj=2.18, Vote=0, Conf=0.90, Co=0.86, WeightedVote=0.00
+  Avaliador 5: ExpEst=6, Freq=0.40, Acc=5.02, Subj=1.53, Vote=-2, Conf=0.90, Co=0.78, WeightedVote=-23.30
+  -> CDF: 0.4997
+  -> IC: 0.0
+  -> coScoreTotal: 0.5113
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 52/100 ---
+  Avaliador 1: ExpEst=2, Freq=1.77, Acc=4.87, Subj=4.30, Vote=2, Conf=0.90, Co=0.65, WeightedVote=23.27
+  Avaliador 2: ExpEst=2, Freq=0.11, Acc=6.51, Subj=3.04, Vote=-2, Conf=1.10, Co=0.60, WeightedVote=-25.64
+  Avaliador 3: ExpEst=8, Freq=0.48, Acc=2.08, Subj=2.88, Vote=0, Conf=0.90, Co=0.27, WeightedVote=0.00
+  Avaliador 4: ExpEst=6, Freq=0.40, Acc=7.60, Subj=2.69, Vote=2, Conf=1.00, Co=0.81, WeightedVote=33.39
+  Avaliador 5: ExpEst=8, Freq=0.50, Acc=5.62, Subj=4.49, Vote=1, Conf=1.00, Co=0.05, WeightedVote=18.61
+  -> CDF: 0.8346
+  -> IC: 0.5
+  -> coScoreTotal: 0.4781
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Verídico
+
+
+--- Rodada 53/100 ---
+  Avaliador 1: ExpEst=7, Freq=1.64, Acc=7.84, Subj=3.26, Vote=2, Conf=1.00, Co=0.06, WeightedVote=39.48
+  Avaliador 2: ExpEst=6, Freq=1.97, Acc=4.13, Subj=2.93, Vote=0, Conf=1.10, Co=0.56, WeightedVote=0.00
+  Avaliador 3: ExpEst=3, Freq=0.42, Acc=0.24, Subj=2.36, Vote=-1, Conf=1.00, Co=0.30, WeightedVote=-6.02
+  Avaliador 4: ExpEst=7, Freq=1.82, Acc=5.17, Subj=3.40, Vote=1, Conf=0.90, Co=0.79, WeightedVote=15.65
+  Avaliador 5: ExpEst=8, Freq=1.53, Acc=0.06, Subj=4.90, Vote=2, Conf=1.10, Co=0.23, WeightedVote=31.88
+  -> CDF: 0.9243
+  -> IC: 0.5714
+  -> coScoreTotal: 0.386
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_01_09: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Verídico
+
+
+--- Rodada 54/100 ---
+  Avaliador 1: ExpEst=7, Freq=1.58, Acc=3.41, Subj=2.14, Vote=1, Conf=0.90, Co=0.86, WeightedVote=12.71
+  Avaliador 2: ExpEst=3, Freq=1.16, Acc=5.92, Subj=3.59, Vote=2, Conf=1.00, Co=0.25, WeightedVote=27.34
+  Avaliador 3: ExpEst=3, Freq=1.93, Acc=0.45, Subj=4.05, Vote=0, Conf=0.90, Co=0.03, WeightedVote=0.00
+  Avaliador 4: ExpEst=8, Freq=1.65, Acc=4.81, Subj=3.50, Vote=-2, Conf=1.00, Co=0.34, WeightedVote=-35.92
+  Avaliador 5: ExpEst=7, Freq=1.76, Acc=0.15, Subj=1.59, Vote=1, Conf=0.90, Co=0.48, WeightedVote=9.44
+  -> CDF: 0.6814
+  -> IC: 0.2857
+  -> coScoreTotal: 0.3939
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 55/100 ---
+  Avaliador 1: ExpEst=2, Freq=1.97, Acc=3.96, Subj=1.28, Vote=1, Conf=1.10, Co=0.38, WeightedVote=10.12
+  Avaliador 2: ExpEst=4, Freq=1.95, Acc=0.54, Subj=2.83, Vote=0, Conf=0.90, Co=0.74, WeightedVote=0.00
+  Avaliador 3: ExpEst=6, Freq=1.79, Acc=2.83, Subj=3.06, Vote=1, Conf=1.00, Co=0.52, WeightedVote=13.68
+  Avaliador 4: ExpEst=2, Freq=1.53, Acc=2.80, Subj=2.40, Vote=-1, Conf=0.90, Co=0.48, WeightedVote=-7.85
+  Avaliador 5: ExpEst=2, Freq=0.75, Acc=3.67, Subj=1.04, Vote=-2, Conf=1.00, Co=0.58, WeightedVote=-14.92
+  -> CDF: 0.5223
+  -> IC: 0.0714
+  -> coScoreTotal: 0.539
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 56/100 ---
+  Avaliador 1: ExpEst=7, Freq=0.08, Acc=6.54, Subj=4.37, Vote=2, Conf=1.10, Co=0.39, WeightedVote=39.59
+  Avaliador 2: ExpEst=6, Freq=1.90, Acc=3.07, Subj=2.92, Vote=1, Conf=0.90, Co=0.41, WeightedVote=12.49
+  Avaliador 3: ExpEst=4, Freq=0.88, Acc=6.08, Subj=2.45, Vote=-1, Conf=1.00, Co=0.13, WeightedVote=-13.41
+  Avaliador 4: ExpEst=2, Freq=1.21, Acc=6.55, Subj=4.99, Vote=-2, Conf=1.10, Co=0.41, WeightedVote=-32.45
+  Avaliador 5: ExpEst=7, Freq=0.39, Acc=7.36, Subj=4.17, Vote=-1, Conf=0.90, Co=0.81, WeightedVote=-17.04
+  -> CDF: 0.3796
+  -> IC: 0.2143
+  -> coScoreTotal: 0.4323
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 57/100 ---
+  Avaliador 1: ExpEst=6, Freq=0.29, Acc=2.79, Subj=2.41, Vote=-1, Conf=1.00, Co=0.33, WeightedVote=-11.49
+  Avaliador 2: ExpEst=6, Freq=0.11, Acc=7.85, Subj=1.36, Vote=-2, Conf=1.00, Co=0.21, WeightedVote=-30.65
+  Avaliador 3: ExpEst=7, Freq=1.49, Acc=1.93, Subj=3.07, Vote=1, Conf=0.90, Co=0.34, WeightedVote=12.14
+  Avaliador 4: ExpEst=5, Freq=1.98, Acc=0.07, Subj=2.28, Vote=2, Conf=1.00, Co=0.74, WeightedVote=18.66
+  Avaliador 5: ExpEst=5, Freq=0.17, Acc=0.24, Subj=2.65, Vote=-1, Conf=0.90, Co=0.74, WeightedVote=-7.25
+  -> CDF: 0.3856
+  -> IC: 0.2143
+  -> coScoreTotal: 0.4704
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 58/100 ---
+  Avaliador 1: ExpEst=5, Freq=0.02, Acc=0.73, Subj=1.54, Vote=-1, Conf=1.10, Co=0.42, WeightedVote=-8.02
+  Avaliador 2: ExpEst=6, Freq=0.31, Acc=1.89, Subj=1.25, Vote=1, Conf=1.10, Co=0.19, WeightedVote=10.39
+  Avaliador 3: ExpEst=6, Freq=1.19, Acc=0.90, Subj=2.17, Vote=0, Conf=1.00, Co=0.77, WeightedVote=0.00
+  Avaliador 4: ExpEst=7, Freq=1.99, Acc=7.00, Subj=2.55, Vote=-1, Conf=0.90, Co=0.64, WeightedVote=-16.69
+  Avaliador 5: ExpEst=5, Freq=1.37, Acc=5.05, Subj=1.40, Vote=1, Conf=0.90, Co=0.23, WeightedVote=11.54
+  -> CDF: 0.497
+  -> IC: 0.0
+  -> coScoreTotal: 0.4494
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 59/100 ---
+  Avaliador 1: ExpEst=7, Freq=0.25, Acc=2.39, Subj=2.09, Vote=0, Conf=0.90, Co=0.75, WeightedVote=0.00
+  Avaliador 2: ExpEst=2, Freq=1.81, Acc=0.40, Subj=2.63, Vote=-2, Conf=1.10, Co=0.94, WeightedVote=-15.03
+  Avaliador 3: ExpEst=4, Freq=1.24, Acc=2.00, Subj=1.77, Vote=2, Conf=1.00, Co=0.92, WeightedVote=18.01
+  Avaliador 4: ExpEst=7, Freq=1.43, Acc=4.35, Subj=3.93, Vote=-1, Conf=0.90, Co=0.25, WeightedVote=-15.03
+  Avaliador 5: ExpEst=5, Freq=1.94, Acc=3.42, Subj=3.11, Vote=-1, Conf=1.10, Co=0.56, WeightedVote=-14.81
+  -> CDF: 0.1705
+  -> IC: 0.2857
+  -> coScoreTotal: 0.6815
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Inverídico
+
+
+--- Rodada 60/100 ---
+  Avaliador 1: ExpEst=6, Freq=0.78, Acc=6.12, Subj=2.97, Vote=2, Conf=0.90, Co=0.74, WeightedVote=28.57
+  Avaliador 2: ExpEst=4, Freq=0.96, Acc=7.32, Subj=4.98, Vote=-2, Conf=0.90, Co=0.65, WeightedVote=-31.07
+  Avaliador 3: ExpEst=3, Freq=0.63, Acc=1.89, Subj=4.16, Vote=-1, Conf=0.90, Co=0.65, WeightedVote=-8.71
+  Avaliador 4: ExpEst=2, Freq=1.45, Acc=3.02, Subj=3.75, Vote=1, Conf=0.90, Co=0.18, WeightedVote=9.20
+  Avaliador 5: ExpEst=4, Freq=1.12, Acc=3.38, Subj=3.65, Vote=0, Conf=1.10, Co=0.95, WeightedVote=0.00
+  -> CDF: 0.5002
+  -> IC: 0.0
+  -> coScoreTotal: 0.6331
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 61/100 ---
+  Avaliador 1: ExpEst=2, Freq=0.16, Acc=2.68, Subj=1.72, Vote=-1, Conf=1.10, Co=0.52, WeightedVote=-7.21
+  Avaliador 2: ExpEst=3, Freq=0.85, Acc=2.90, Subj=2.95, Vote=1, Conf=1.00, Co=0.05, WeightedVote=9.70
+  Avaliador 3: ExpEst=6, Freq=0.58, Acc=4.38, Subj=3.04, Vote=1, Conf=1.00, Co=0.76, WeightedVote=14.00
+  Avaliador 4: ExpEst=4, Freq=0.01, Acc=0.25, Subj=3.49, Vote=-2, Conf=1.10, Co=0.14, WeightedVote=-17.06
+  Avaliador 5: ExpEst=8, Freq=0.16, Acc=6.36, Subj=2.57, Vote=-1, Conf=1.10, Co=0.89, WeightedVote=-18.80
+  -> CDF: 0.2992
+  -> IC: 0.1111
+  -> coScoreTotal: 0.4718
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 62/100 ---
+  Avaliador 1: ExpEst=4, Freq=1.51, Acc=5.30, Subj=4.28, Vote=1, Conf=1.10, Co=0.03, WeightedVote=16.60
+  Avaliador 2: ExpEst=7, Freq=0.37, Acc=2.55, Subj=2.69, Vote=-1, Conf=1.00, Co=0.67, WeightedVote=-12.62
+  Avaliador 3: ExpEst=6, Freq=1.17, Acc=7.22, Subj=2.60, Vote=-2, Conf=1.10, Co=0.68, WeightedVote=-37.37
+  Avaliador 4: ExpEst=7, Freq=0.44, Acc=0.72, Subj=4.96, Vote=-1, Conf=1.10, Co=0.79, WeightedVote=-14.43
+  Avaliador 5: ExpEst=8, Freq=0.87, Acc=2.59, Subj=4.15, Vote=2, Conf=0.90, Co=0.80, WeightedVote=28.11
+  -> CDF: 0.3857
+  -> IC: 0.2143
+  -> coScoreTotal: 0.5922
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 63/100 ---
+  Avaliador 1: ExpEst=2, Freq=0.06, Acc=6.80, Subj=1.23, Vote=2, Conf=0.90, Co=0.25, WeightedVote=18.16
+  Avaliador 2: ExpEst=4, Freq=1.98, Acc=0.26, Subj=1.53, Vote=0, Conf=1.10, Co=0.90, WeightedVote=0.00
+  Avaliador 3: ExpEst=4, Freq=0.61, Acc=6.76, Subj=4.47, Vote=-2, Conf=0.90, Co=0.69, WeightedVote=-28.51
+  Avaliador 4: ExpEst=4, Freq=0.13, Acc=4.17, Subj=4.43, Vote=0, Conf=1.10, Co=0.56, WeightedVote=0.00
+  Avaliador 5: ExpEst=4, Freq=2.00, Acc=2.00, Subj=4.35, Vote=1, Conf=1.10, Co=0.59, WeightedVote=13.58
+  -> CDF: 0.6195
+  -> IC: 0.0714
+  -> coScoreTotal: 0.5969
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 64/100 ---
+  Avaliador 1: ExpEst=3, Freq=1.46, Acc=3.20, Subj=1.51, Vote=2, Conf=1.10, Co=0.22, WeightedVote=20.18
+  Avaliador 2: ExpEst=4, Freq=0.41, Acc=3.42, Subj=2.58, Vote=-2, Conf=1.10, Co=0.48, WeightedVote=-22.91
+  Avaliador 3: ExpEst=2, Freq=1.34, Acc=3.21, Subj=2.05, Vote=1, Conf=1.00, Co=0.29, WeightedVote=8.59
+  Avaliador 4: ExpEst=8, Freq=1.80, Acc=7.80, Subj=3.70, Vote=-2, Conf=1.10, Co=0.06, WeightedVote=-46.85
+  Avaliador 5: ExpEst=4, Freq=1.34, Acc=5.44, Subj=4.26, Vote=-2, Conf=1.00, Co=0.23, WeightedVote=-30.10
+  -> CDF: 0.1665
+  -> IC: 0.6818
+  -> coScoreTotal: 0.2554
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Inverídico
+
+
+--- Rodada 65/100 ---
+  Avaliador 1: ExpEst=4, Freq=0.35, Acc=1.80, Subj=2.86, Vote=-1, Conf=1.10, Co=0.55, WeightedVote=-9.91
+  Avaliador 2: ExpEst=2, Freq=1.30, Acc=7.08, Subj=4.48, Vote=0, Conf=1.10, Co=0.51, WeightedVote=0.00
+  Avaliador 3: ExpEst=6, Freq=1.98, Acc=5.65, Subj=2.31, Vote=-1, Conf=0.90, Co=0.87, WeightedVote=-14.35
+  Avaliador 4: ExpEst=2, Freq=1.29, Acc=2.74, Subj=3.47, Vote=-1, Conf=1.00, Co=0.76, WeightedVote=-9.51
+  Avaliador 5: ExpEst=4, Freq=0.33, Acc=3.10, Subj=2.37, Vote=-1, Conf=1.10, Co=0.36, WeightedVote=-10.78
+  -> CDF: 0.0004
+  -> IC: 0.4706
+  -> coScoreTotal: 0.6082
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 66/100 ---
+  Avaliador 1: ExpEst=2, Freq=0.03, Acc=2.08, Subj=4.17, Vote=2, Conf=0.90, Co=0.67, WeightedVote=14.91
+  Avaliador 2: ExpEst=7, Freq=0.75, Acc=2.88, Subj=4.24, Vote=2, Conf=1.00, Co=0.85, WeightedVote=29.73
+  Avaliador 3: ExpEst=3, Freq=1.04, Acc=7.18, Subj=3.81, Vote=-2, Conf=1.10, Co=0.40, WeightedVote=-33.06
+  Avaliador 4: ExpEst=7, Freq=1.29, Acc=6.87, Subj=3.56, Vote=1, Conf=1.10, Co=0.25, WeightedVote=20.59
+  Avaliador 5: ExpEst=6, Freq=0.29, Acc=7.04, Subj=2.57, Vote=-1, Conf=1.00, Co=0.93, WeightedVote=-15.90
+  -> CDF: 0.6435
+  -> IC: 0.4286
+  -> coScoreTotal: 0.62
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 67/100 ---
+  Avaliador 1: ExpEst=5, Freq=0.62, Acc=4.25, Subj=1.73, Vote=0, Conf=1.10, Co=0.46, WeightedVote=0.00
+  Avaliador 2: ExpEst=2, Freq=0.35, Acc=7.36, Subj=3.14, Vote=-1, Conf=1.00, Co=0.64, WeightedVote=-12.85
+  Avaliador 3: ExpEst=6, Freq=1.41, Acc=3.01, Subj=3.58, Vote=-2, Conf=1.10, Co=0.43, WeightedVote=-30.81
+  Avaliador 4: ExpEst=2, Freq=0.42, Acc=3.89, Subj=4.41, Vote=1, Conf=1.10, Co=0.02, WeightedVote=11.79
+  Avaliador 5: ExpEst=8, Freq=0.06, Acc=3.50, Subj=4.81, Vote=1, Conf=1.00, Co=0.66, WeightedVote=16.38
+  -> CDF: 0.442
+  -> IC: 0.0714
+  -> coScoreTotal: 0.4426
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 68/100 ---
+  Avaliador 1: ExpEst=5, Freq=1.76, Acc=6.02, Subj=1.90, Vote=2, Conf=0.90, Co=0.58, WeightedVote=26.43
+  Avaliador 2: ExpEst=8, Freq=0.76, Acc=1.48, Subj=3.75, Vote=-1, Conf=1.00, Co=0.82, WeightedVote=-13.99
+  Avaliador 3: ExpEst=4, Freq=1.88, Acc=3.03, Subj=3.42, Vote=-1, Conf=0.90, Co=0.21, WeightedVote=-11.10
+  Avaliador 4: ExpEst=4, Freq=0.27, Acc=7.93, Subj=4.02, Vote=-2, Conf=0.90, Co=0.74, WeightedVote=-29.19
+  Avaliador 5: ExpEst=4, Freq=0.71, Acc=4.24, Subj=1.14, Vote=-2, Conf=1.00, Co=0.00, WeightedVote=-20.18
+  -> CDF: 0.124
+  -> IC: 0.5556
+  -> coScoreTotal: 0.4697
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 69/100 ---
+  Avaliador 1: ExpEst=8, Freq=0.04, Acc=4.57, Subj=4.70, Vote=2, Conf=1.10, Co=0.85, WeightedVote=38.11
+  Avaliador 2: ExpEst=8, Freq=1.65, Acc=4.68, Subj=1.17, Vote=0, Conf=0.90, Co=0.40, WeightedVote=0.00
+  Avaliador 3: ExpEst=2, Freq=0.20, Acc=6.90, Subj=4.21, Vote=0, Conf=1.10, Co=0.50, WeightedVote=0.00
+  Avaliador 4: ExpEst=6, Freq=1.26, Acc=4.93, Subj=4.52, Vote=1, Conf=0.90, Co=0.64, WeightedVote=15.03
+  Avaliador 5: ExpEst=7, Freq=1.90, Acc=3.37, Subj=1.10, Vote=1, Conf=1.10, Co=0.82, WeightedVote=14.70
+  -> CDF: 0.9116
+  -> IC: 0.3333
+  -> coScoreTotal: 0.6451
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_01_09: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Verídico
+
+
+--- Rodada 70/100 ---
+  Avaliador 1: ExpEst=3, Freq=1.38, Acc=5.46, Subj=1.52, Vote=0, Conf=1.00, Co=0.95, WeightedVote=0.00
+  Avaliador 2: ExpEst=7, Freq=1.66, Acc=0.80, Subj=4.12, Vote=1, Conf=1.10, Co=0.05, WeightedVote=14.94
+  Avaliador 3: ExpEst=5, Freq=1.15, Acc=5.92, Subj=1.01, Vote=-1, Conf=1.00, Co=0.44, WeightedVote=-13.08
+  Avaliador 4: ExpEst=7, Freq=0.96, Acc=2.13, Subj=2.12, Vote=1, Conf=1.10, Co=0.38, WeightedVote=13.43
+  Avaliador 5: ExpEst=4, Freq=0.51, Acc=6.32, Subj=2.90, Vote=0, Conf=1.00, Co=0.33, WeightedVote=0.00
+  -> CDF: 0.7072
+  -> IC: 0.1667
+  -> coScoreTotal: 0.4301
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 71/100 ---
+  Avaliador 1: ExpEst=2, Freq=0.72, Acc=4.70, Subj=2.17, Vote=0, Conf=0.90, Co=0.13, WeightedVote=0.00
+  Avaliador 2: ExpEst=5, Freq=0.22, Acc=1.39, Subj=3.90, Vote=-2, Conf=0.90, Co=0.81, WeightedVote=-18.92
+  Avaliador 3: ExpEst=8, Freq=1.81, Acc=2.30, Subj=1.18, Vote=0, Conf=1.00, Co=0.29, WeightedVote=0.00
+  Avaliador 4: ExpEst=2, Freq=1.19, Acc=6.40, Subj=1.37, Vote=-2, Conf=1.10, Co=0.49, WeightedVote=-24.12
+  Avaliador 5: ExpEst=5, Freq=1.54, Acc=7.62, Subj=4.02, Vote=0, Conf=1.00, Co=0.54, WeightedVote=0.00
+  -> CDF: 0.1375
+  -> IC: 0.3077
+  -> coScoreTotal: 0.4522
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Inverídico
+
+
+--- Rodada 72/100 ---
+  Avaliador 1: ExpEst=4, Freq=1.14, Acc=5.33, Subj=3.74, Vote=0, Conf=1.10, Co=0.12, WeightedVote=0.00
+  Avaliador 2: ExpEst=4, Freq=0.02, Acc=5.64, Subj=2.84, Vote=2, Conf=1.00, Co=0.57, WeightedVote=25.01
+  Avaliador 3: ExpEst=2, Freq=0.57, Acc=3.52, Subj=2.31, Vote=-1, Conf=0.90, Co=0.73, WeightedVote=-7.57
+  Avaliador 4: ExpEst=8, Freq=1.27, Acc=3.06, Subj=2.50, Vote=-2, Conf=0.90, Co=0.32, WeightedVote=-26.69
+  Avaliador 5: ExpEst=6, Freq=1.99, Acc=0.12, Subj=3.26, Vote=2, Conf=1.10, Co=0.59, WeightedVote=25.01
+  -> CDF: 0.6164
+  -> IC: 0.3571
+  -> coScoreTotal: 0.4643
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 73/100 ---
+  Avaliador 1: ExpEst=4, Freq=0.33, Acc=1.54, Subj=3.47, Vote=-1, Conf=0.90, Co=0.38, WeightedVote=-8.40
+  Avaliador 2: ExpEst=8, Freq=1.21, Acc=0.69, Subj=1.72, Vote=-1, Conf=1.10, Co=0.52, WeightedVote=-12.78
+  Avaliador 3: ExpEst=2, Freq=1.18, Acc=2.63, Subj=3.17, Vote=-2, Conf=1.10, Co=0.36, WeightedVote=-19.74
+  Avaliador 4: ExpEst=8, Freq=0.67, Acc=2.33, Subj=1.63, Vote=-1, Conf=1.10, Co=0.55, WeightedVote=-13.90
+  Avaliador 5: ExpEst=8, Freq=1.92, Acc=2.28, Subj=1.18, Vote=-2, Conf=1.00, Co=0.58, WeightedVote=-26.76
+  -> CDF: 0.0
+  -> IC: 0.6538
+  -> coScoreTotal: 0.4774
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 74/100 ---
+  Avaliador 1: ExpEst=2, Freq=0.49, Acc=4.81, Subj=1.19, Vote=-1, Conf=1.00, Co=0.06, WeightedVote=-8.49
+  Avaliador 2: ExpEst=7, Freq=0.52, Acc=0.51, Subj=3.96, Vote=-1, Conf=1.10, Co=0.10, WeightedVote=-13.19
+  Avaliador 3: ExpEst=6, Freq=0.35, Acc=0.00, Subj=3.72, Vote=-1, Conf=1.00, Co=0.29, WeightedVote=-10.08
+  Avaliador 4: ExpEst=8, Freq=1.97, Acc=0.63, Subj=2.93, Vote=-1, Conf=1.10, Co=0.12, WeightedVote=-14.89
+  Avaliador 5: ExpEst=7, Freq=0.33, Acc=6.50, Subj=3.53, Vote=1, Conf=0.90, Co=0.52, WeightedVote=15.62
+  -> CDF: 0.093
+  -> IC: 0.4412
+  -> coScoreTotal: 0.2186
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_01_09: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Inverídico
+
+
+--- Rodada 75/100 ---
+  Avaliador 1: ExpEst=3, Freq=1.67, Acc=6.36, Subj=4.14, Vote=-2, Conf=0.90, Co=0.47, WeightedVote=-27.30
+  Avaliador 2: ExpEst=2, Freq=0.70, Acc=5.99, Subj=3.21, Vote=0, Conf=0.90, Co=0.78, WeightedVote=0.00
+  Avaliador 3: ExpEst=5, Freq=1.51, Acc=2.74, Subj=3.24, Vote=-2, Conf=1.00, Co=0.58, WeightedVote=-24.97
+  Avaliador 4: ExpEst=4, Freq=0.62, Acc=2.35, Subj=1.55, Vote=0, Conf=1.10, Co=0.10, WeightedVote=0.00
+  Avaliador 5: ExpEst=8, Freq=1.53, Acc=1.44, Subj=1.05, Vote=2, Conf=0.90, Co=0.94, WeightedVote=21.64
+  -> CDF: 0.2806
+  -> IC: 0.3333
+  -> coScoreTotal: 0.5732
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 76/100 ---
+  Avaliador 1: ExpEst=2, Freq=0.38, Acc=7.43, Subj=3.35, Vote=-1, Conf=1.00, Co=0.82, WeightedVote=-13.17
+  Avaliador 2: ExpEst=2, Freq=1.99, Acc=7.22, Subj=3.25, Vote=-2, Conf=1.10, Co=0.16, WeightedVote=-31.83
+  Avaliador 3: ExpEst=3, Freq=0.91, Acc=7.22, Subj=3.82, Vote=-1, Conf=0.90, Co=0.59, WeightedVote=-13.46
+  Avaliador 4: ExpEst=3, Freq=1.68, Acc=2.07, Subj=4.26, Vote=1, Conf=1.10, Co=0.57, WeightedVote=12.12
+  Avaliador 5: ExpEst=8, Freq=0.75, Acc=4.41, Subj=2.69, Vote=-2, Conf=1.10, Co=0.78, WeightedVote=-34.87
+  -> CDF: 0.0441
+  -> IC: 0.6111
+  -> coScoreTotal: 0.5863
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 77/100 ---
+  Avaliador 1: ExpEst=3, Freq=0.84, Acc=5.59, Subj=2.47, Vote=2, Conf=1.10, Co=0.05, WeightedVote=26.19
+  Avaliador 2: ExpEst=4, Freq=0.32, Acc=0.11, Subj=1.57, Vote=-2, Conf=1.10, Co=0.09, WeightedVote=-13.21
+  Avaliador 3: ExpEst=2, Freq=0.97, Acc=3.28, Subj=4.37, Vote=2, Conf=1.10, Co=0.63, WeightedVote=23.37
+  Avaliador 4: ExpEst=6, Freq=1.52, Acc=0.09, Subj=3.73, Vote=1, Conf=0.90, Co=0.74, WeightedVote=10.21
+  Avaliador 5: ExpEst=7, Freq=1.03, Acc=7.26, Subj=4.91, Vote=-2, Conf=0.90, Co=0.78, WeightedVote=-36.35
+  -> CDF: 0.6217
+  -> IC: 0.0556
+  -> coScoreTotal: 0.4579
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 78/100 ---
+  Avaliador 1: ExpEst=6, Freq=1.11, Acc=5.45, Subj=3.33, Vote=2, Conf=0.90, Co=0.79, WeightedVote=28.58
+  Avaliador 2: ExpEst=4, Freq=1.95, Acc=4.37, Subj=2.47, Vote=0, Conf=1.00, Co=0.70, WeightedVote=0.00
+  Avaliador 3: ExpEst=3, Freq=1.07, Acc=1.06, Subj=3.17, Vote=0, Conf=0.90, Co=0.37, WeightedVote=0.00
+  Avaliador 4: ExpEst=7, Freq=0.70, Acc=2.82, Subj=3.86, Vote=1, Conf=1.00, Co=0.17, WeightedVote=14.38
+  Avaliador 5: ExpEst=4, Freq=1.82, Acc=4.14, Subj=3.40, Vote=1, Conf=0.90, Co=0.30, WeightedVote=12.02
+  -> CDF: 0.9355
+  -> IC: 0.3333
+  -> coScoreTotal: 0.4672
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_01_09: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Verídico
+
+
+--- Rodada 79/100 ---
+  Avaliador 1: ExpEst=3, Freq=1.67, Acc=3.34, Subj=3.93, Vote=0, Conf=1.00, Co=0.43, WeightedVote=0.00
+  Avaliador 2: ExpEst=8, Freq=1.30, Acc=4.73, Subj=1.86, Vote=1, Conf=0.90, Co=0.15, WeightedVote=14.30
+  Avaliador 3: ExpEst=7, Freq=1.71, Acc=7.75, Subj=3.04, Vote=0, Conf=0.90, Co=0.52, WeightedVote=0.00
+  Avaliador 4: ExpEst=7, Freq=0.45, Acc=5.75, Subj=2.45, Vote=2, Conf=0.90, Co=0.34, WeightedVote=28.17
+  Avaliador 5: ExpEst=8, Freq=0.19, Acc=0.12, Subj=3.21, Vote=0, Conf=1.00, Co=0.92, WeightedVote=0.00
+  -> CDF: 0.8261
+  -> IC: 0.1364
+  -> coScoreTotal: 0.4733
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 80/100 ---
+  Avaliador 1: ExpEst=3, Freq=0.95, Acc=1.16, Subj=3.97, Vote=0, Conf=1.10, Co=0.34, WeightedVote=0.00
+  Avaliador 2: ExpEst=4, Freq=1.84, Acc=7.99, Subj=3.33, Vote=2, Conf=1.10, Co=0.34, WeightedVote=37.75
+  Avaliador 3: ExpEst=7, Freq=1.26, Acc=7.14, Subj=3.35, Vote=2, Conf=1.00, Co=0.06, WeightedVote=37.48
+  Avaliador 4: ExpEst=4, Freq=0.62, Acc=0.19, Subj=1.60, Vote=2, Conf=1.10, Co=0.73, WeightedVote=14.10
+  Avaliador 5: ExpEst=4, Freq=1.52, Acc=5.36, Subj=2.35, Vote=-2, Conf=0.90, Co=0.85, WeightedVote=-23.81
+  -> CDF: 0.8407
+  -> IC: 0.7273
+  -> coScoreTotal: 0.4628
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Verídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Verídico
+
+
+--- Rodada 81/100 ---
+  Avaliador 1: ExpEst=5, Freq=1.71, Acc=5.78, Subj=1.77, Vote=-1, Conf=1.10, Co=0.41, WeightedVote=-15.68
+  Avaliador 2: ExpEst=5, Freq=0.09, Acc=3.01, Subj=1.72, Vote=1, Conf=0.90, Co=0.00, WeightedVote=8.83
+  Avaliador 3: ExpEst=3, Freq=0.61, Acc=7.86, Subj=4.27, Vote=-2, Conf=0.90, Co=0.25, WeightedVote=-28.35
+  Avaliador 4: ExpEst=8, Freq=0.92, Acc=2.57, Subj=1.65, Vote=2, Conf=0.90, Co=0.25, WeightedVote=23.65
+  Avaliador 5: ExpEst=7, Freq=1.93, Acc=0.37, Subj=2.12, Vote=1, Conf=0.90, Co=0.43, WeightedVote=10.27
+  -> CDF: 0.5344
+  -> IC: 0.2143
+  -> coScoreTotal: 0.2686
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 82/100 ---
+  Avaliador 1: ExpEst=8, Freq=0.02, Acc=0.53, Subj=4.72, Vote=0, Conf=1.10, Co=0.45, WeightedVote=0.00
+  Avaliador 2: ExpEst=3, Freq=1.74, Acc=0.95, Subj=2.39, Vote=0, Conf=0.90, Co=0.69, WeightedVote=0.00
+  Avaliador 3: ExpEst=3, Freq=0.30, Acc=2.57, Subj=4.80, Vote=0, Conf=0.90, Co=0.58, WeightedVote=0.00
+  Avaliador 4: ExpEst=2, Freq=1.69, Acc=4.03, Subj=2.29, Vote=-2, Conf=1.10, Co=0.09, WeightedVote=-22.05
+  Avaliador 5: ExpEst=2, Freq=1.04, Acc=5.30, Subj=3.46, Vote=-2, Conf=0.90, Co=0.31, WeightedVote=-21.24
+  -> CDF: 0.1316
+  -> IC: 0.3077
+  -> coScoreTotal: 0.424
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Inverídico
+
+
+--- Rodada 83/100 ---
+  Avaliador 1: ExpEst=4, Freq=1.63, Acc=0.61, Subj=1.85, Vote=-2, Conf=0.90, Co=0.23, WeightedVote=-14.56
+  Avaliador 2: ExpEst=7, Freq=1.65, Acc=7.11, Subj=3.12, Vote=1, Conf=0.90, Co=0.49, WeightedVote=17.00
+  Avaliador 3: ExpEst=5, Freq=0.51, Acc=2.48, Subj=2.65, Vote=-2, Conf=0.90, Co=0.57, WeightedVote=-19.16
+  Avaliador 4: ExpEst=7, Freq=0.15, Acc=6.63, Subj=3.54, Vote=-2, Conf=1.00, Co=0.43, WeightedVote=-34.64
+  Avaliador 5: ExpEst=3, Freq=2.00, Acc=7.97, Subj=4.94, Vote=-2, Conf=1.10, Co=0.50, WeightedVote=-39.40
+  -> CDF: 0.0447
+  -> IC: 0.9118
+  -> coScoreTotal: 0.4439
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 84/100 ---
+  Avaliador 1: ExpEst=7, Freq=1.28, Acc=2.40, Subj=3.67, Vote=0, Conf=1.10, Co=0.26, WeightedVote=0.00
+  Avaliador 2: ExpEst=4, Freq=1.33, Acc=4.77, Subj=1.08, Vote=0, Conf=1.00, Co=0.25, WeightedVote=0.00
+  Avaliador 3: ExpEst=3, Freq=0.19, Acc=3.98, Subj=3.37, Vote=-1, Conf=1.00, Co=0.97, WeightedVote=-10.53
+  Avaliador 4: ExpEst=3, Freq=1.77, Acc=4.52, Subj=1.06, Vote=-2, Conf=1.00, Co=0.62, WeightedVote=-20.69
+  Avaliador 5: ExpEst=8, Freq=1.99, Acc=5.29, Subj=3.19, Vote=-1, Conf=0.90, Co=0.87, WeightedVote=-16.63
+  -> CDF: 0.0369
+  -> IC: 0.3333
+  -> coScoreTotal: 0.5926
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_02_08: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 85/100 ---
+  Avaliador 1: ExpEst=8, Freq=1.14, Acc=4.48, Subj=1.72, Vote=0, Conf=1.00, Co=0.10, WeightedVote=0.00
+  Avaliador 2: ExpEst=3, Freq=0.65, Acc=1.42, Subj=4.54, Vote=0, Conf=1.00, Co=0.86, WeightedVote=0.00
+  Avaliador 3: ExpEst=5, Freq=1.99, Acc=3.43, Subj=2.97, Vote=0, Conf=1.10, Co=0.68, WeightedVote=0.00
+  Avaliador 4: ExpEst=8, Freq=0.71, Acc=0.96, Subj=1.82, Vote=-2, Conf=0.90, Co=0.26, WeightedVote=-20.68
+  Avaliador 5: ExpEst=7, Freq=0.95, Acc=0.28, Subj=2.36, Vote=2, Conf=0.90, Co=0.29, WeightedVote=19.08
+  -> CDF: 0.4973
+  -> IC: 0.0
+  -> coScoreTotal: 0.4374
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 86/100 ---
+  Avaliador 1: ExpEst=4, Freq=0.16, Acc=2.71, Subj=3.89, Vote=-2, Conf=1.10, Co=0.97, WeightedVote=-23.66
+  Avaliador 2: ExpEst=8, Freq=0.15, Acc=1.16, Subj=4.93, Vote=2, Conf=1.10, Co=0.17, WeightedVote=31.32
+  Avaliador 3: ExpEst=4, Freq=1.29, Acc=3.52, Subj=1.84, Vote=0, Conf=0.90, Co=0.28, WeightedVote=0.00
+  Avaliador 4: ExpEst=8, Freq=0.70, Acc=2.11, Subj=2.54, Vote=0, Conf=1.00, Co=0.39, WeightedVote=0.00
+  Avaliador 5: ExpEst=5, Freq=0.09, Acc=3.12, Subj=2.00, Vote=1, Conf=0.90, Co=0.23, WeightedVote=9.19
+  -> CDF: 0.6111
+  -> IC: 0.0714
+  -> coScoreTotal: 0.4087
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 87/100 ---
+  Avaliador 1: ExpEst=3, Freq=1.21, Acc=6.61, Subj=1.76, Vote=-2, Conf=0.90, Co=0.95, WeightedVote=-22.64
+  Avaliador 2: ExpEst=6, Freq=1.28, Acc=5.38, Subj=2.70, Vote=0, Conf=0.90, Co=0.48, WeightedVote=0.00
+  Avaliador 3: ExpEst=7, Freq=1.91, Acc=6.69, Subj=2.61, Vote=2, Conf=1.00, Co=0.20, WeightedVote=36.43
+  Avaliador 4: ExpEst=3, Freq=0.05, Acc=5.21, Subj=2.15, Vote=1, Conf=0.90, Co=0.50, WeightedVote=9.37
+  Avaliador 5: ExpEst=4, Freq=1.42, Acc=4.29, Subj=4.85, Vote=2, Conf=1.00, Co=0.36, WeightedVote=29.12
+  -> CDF: 0.8077
+  -> IC: 0.5
+  -> coScoreTotal: 0.4992
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Verídico
+
+
+--- Rodada 88/100 ---
+  Avaliador 1: ExpEst=8, Freq=0.45, Acc=5.08, Subj=1.92, Vote=2, Conf=0.90, Co=0.27, WeightedVote=27.82
+  Avaliador 2: ExpEst=5, Freq=1.75, Acc=0.62, Subj=2.21, Vote=-1, Conf=1.00, Co=0.44, WeightedVote=-9.58
+  Avaliador 3: ExpEst=2, Freq=0.10, Acc=6.41, Subj=3.83, Vote=-1, Conf=0.90, Co=0.27, WeightedVote=-11.10
+  Avaliador 4: ExpEst=7, Freq=0.07, Acc=0.10, Subj=3.82, Vote=0, Conf=1.10, Co=0.06, WeightedVote=0.00
+  Avaliador 5: ExpEst=7, Freq=0.94, Acc=0.68, Subj=3.95, Vote=1, Conf=0.90, Co=0.50, WeightedVote=11.32
+  -> CDF: 0.5888
+  -> IC: 0.0714
+  -> coScoreTotal: 0.3078
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 89/100 ---
+  Avaliador 1: ExpEst=8, Freq=1.33, Acc=5.59, Subj=3.96, Vote=-1, Conf=1.00, Co=0.92, WeightedVote=-18.88
+  Avaliador 2: ExpEst=2, Freq=0.85, Acc=4.86, Subj=1.79, Vote=0, Conf=0.90, Co=0.13, WeightedVote=0.00
+  Avaliador 3: ExpEst=4, Freq=0.21, Acc=3.53, Subj=2.80, Vote=1, Conf=1.00, Co=0.58, WeightedVote=10.55
+  Avaliador 4: ExpEst=2, Freq=0.59, Acc=2.99, Subj=2.38, Vote=-2, Conf=1.10, Co=0.78, WeightedVote=-17.52
+  Avaliador 5: ExpEst=4, Freq=0.11, Acc=5.19, Subj=3.44, Vote=2, Conf=1.00, Co=0.56, WeightedVote=25.48
+  -> CDF: 0.4686
+  -> IC: 0.0
+  -> coScoreTotal: 0.5951
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 90/100 ---
+  Avaliador 1: ExpEst=6, Freq=0.19, Acc=0.83, Subj=3.13, Vote=-1, Conf=1.00, Co=0.85, WeightedVote=-10.15
+  Avaliador 2: ExpEst=6, Freq=0.33, Acc=0.84, Subj=2.67, Vote=1, Conf=1.10, Co=0.55, WeightedVote=10.83
+  Avaliador 3: ExpEst=2, Freq=0.26, Acc=5.63, Subj=1.78, Vote=2, Conf=0.90, Co=0.18, WeightedVote=17.39
+  Avaliador 4: ExpEst=8, Freq=1.86, Acc=6.38, Subj=3.13, Vote=-2, Conf=1.10, Co=0.82, WeightedVote=-42.63
+  Avaliador 5: ExpEst=7, Freq=0.17, Acc=2.38, Subj=2.25, Vote=0, Conf=0.90, Co=0.30, WeightedVote=0.00
+  -> CDF: 0.4505
+  -> IC: 0.0
+  -> coScoreTotal: 0.5406
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 91/100 ---
+  Avaliador 1: ExpEst=5, Freq=0.97, Acc=3.42, Subj=2.36, Vote=-2, Conf=1.00, Co=0.55, WeightedVote=-23.50
+  Avaliador 2: ExpEst=6, Freq=1.09, Acc=0.76, Subj=3.43, Vote=1, Conf=1.10, Co=0.11, WeightedVote=12.39
+  Avaliador 3: ExpEst=3, Freq=0.19, Acc=2.10, Subj=2.23, Vote=2, Conf=0.90, Co=0.49, WeightedVote=13.54
+  Avaliador 4: ExpEst=4, Freq=0.70, Acc=6.65, Subj=1.18, Vote=0, Conf=0.90, Co=0.12, WeightedVote=0.00
+  Avaliador 5: ExpEst=7, Freq=1.86, Acc=4.90, Subj=2.38, Vote=2, Conf=0.90, Co=0.47, WeightedVote=29.05
+  -> CDF: 0.7714
+  -> IC: 0.5
+  -> coScoreTotal: 0.3477
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 92/100 ---
+  Avaliador 1: ExpEst=5, Freq=1.85, Acc=3.89, Subj=1.64, Vote=-1, Conf=1.10, Co=0.80, WeightedVote=-13.61
+  Avaliador 2: ExpEst=6, Freq=0.04, Acc=2.16, Subj=1.15, Vote=2, Conf=0.90, Co=0.74, WeightedVote=16.82
+  Avaliador 3: ExpEst=5, Freq=1.50, Acc=3.97, Subj=2.18, Vote=-1, Conf=1.10, Co=0.83, WeightedVote=-13.92
+  Avaliador 4: ExpEst=3, Freq=1.80, Acc=7.42, Subj=2.06, Vote=0, Conf=1.00, Co=0.36, WeightedVote=0.00
+  Avaliador 5: ExpEst=6, Freq=1.86, Acc=1.70, Subj=1.09, Vote=0, Conf=0.90, Co=0.04, WeightedVote=0.00
+  -> CDF: 0.3256
+  -> IC: 0.1111
+  -> coScoreTotal: 0.5544
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 93/100 ---
+  Avaliador 1: ExpEst=8, Freq=1.84, Acc=5.59, Subj=3.80, Vote=-2, Conf=1.10, Co=0.02, WeightedVote=-42.30
+  Avaliador 2: ExpEst=2, Freq=0.44, Acc=0.79, Subj=3.66, Vote=1, Conf=1.10, Co=0.38, WeightedVote=7.58
+  Avaliador 3: ExpEst=6, Freq=0.87, Acc=7.54, Subj=1.74, Vote=-2, Conf=1.10, Co=0.67, WeightedVote=-35.53
+  Avaliador 4: ExpEst=6, Freq=1.03, Acc=7.84, Subj=1.66, Vote=-1, Conf=1.10, Co=0.77, WeightedVote=-18.18
+  Avaliador 5: ExpEst=5, Freq=1.39, Acc=6.22, Subj=2.46, Vote=2, Conf=1.00, Co=0.67, WeightedVote=30.13
+  -> CDF: 0.2107
+  -> IC: 0.4286
+  -> coScoreTotal: 0.5026
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Inverídico
+
+
+--- Rodada 94/100 ---
+  Avaliador 1: ExpEst=5, Freq=0.74, Acc=2.83, Subj=1.59, Vote=-2, Conf=0.90, Co=0.60, WeightedVote=-18.29
+  Avaliador 2: ExpEst=3, Freq=1.30, Acc=0.15, Subj=1.38, Vote=1, Conf=1.00, Co=0.29, WeightedVote=5.84
+  Avaliador 3: ExpEst=2, Freq=0.56, Acc=0.44, Subj=3.80, Vote=0, Conf=1.10, Co=0.20, WeightedVote=0.00
+  Avaliador 4: ExpEst=8, Freq=0.65, Acc=6.06, Subj=2.81, Vote=1, Conf=1.10, Co=0.70, WeightedVote=19.27
+  Avaliador 5: ExpEst=3, Freq=0.54, Acc=0.18, Subj=1.97, Vote=0, Conf=1.00, Co=0.65, WeightedVote=0.00
+  -> CDF: 0.5956
+  -> IC: 0.1111
+  -> coScoreTotal: 0.4867
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 95/100 ---
+  Avaliador 1: ExpEst=3, Freq=1.54, Acc=4.67, Subj=4.22, Vote=-2, Conf=1.10, Co=0.45, WeightedVote=-29.56
+  Avaliador 2: ExpEst=4, Freq=0.69, Acc=7.91, Subj=3.39, Vote=-2, Conf=0.90, Co=0.39, WeightedVote=-28.79
+  Avaliador 3: ExpEst=5, Freq=0.43, Acc=4.30, Subj=3.84, Vote=1, Conf=0.90, Co=0.43, WeightedVote=12.21
+  Avaliador 4: ExpEst=6, Freq=0.19, Acc=0.96, Subj=3.39, Vote=-1, Conf=1.10, Co=0.20, WeightedVote=-11.60
+  Avaliador 5: ExpEst=4, Freq=1.92, Acc=6.20, Subj=4.72, Vote=2, Conf=0.90, Co=0.42, WeightedVote=30.32
+  -> CDF: 0.3105
+  -> IC: 0.4286
+  -> coScoreTotal: 0.3801
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 96/100 ---
+  Avaliador 1: ExpEst=2, Freq=0.27, Acc=5.03, Subj=2.15, Vote=2, Conf=1.00, Co=0.40, WeightedVote=18.91
+  Avaliador 2: ExpEst=3, Freq=1.68, Acc=4.75, Subj=1.91, Vote=2, Conf=1.00, Co=0.24, WeightedVote=22.69
+  Avaliador 3: ExpEst=5, Freq=1.30, Acc=7.43, Subj=4.62, Vote=2, Conf=0.90, Co=0.98, WeightedVote=33.02
+  Avaliador 4: ExpEst=3, Freq=1.42, Acc=5.63, Subj=1.95, Vote=-1, Conf=0.90, Co=0.32, WeightedVote=-10.79
+  Avaliador 5: ExpEst=6, Freq=1.09, Acc=3.73, Subj=1.56, Vote=-1, Conf=1.10, Co=0.42, WeightedVote=-13.62
+  -> CDF: 0.8239
+  -> IC: 0.5385
+  -> coScoreTotal: 0.4703
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_0225_0775: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Verídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Verídico
+
+
+--- Rodada 97/100 ---
+  Avaliador 1: ExpEst=5, Freq=0.58, Acc=5.38, Subj=1.30, Vote=2, Conf=1.10, Co=0.38, WeightedVote=26.96
+  Avaliador 2: ExpEst=7, Freq=0.94, Acc=2.23, Subj=2.86, Vote=-2, Conf=1.00, Co=0.42, WeightedVote=-26.06
+  Avaliador 3: ExpEst=7, Freq=1.47, Acc=5.07, Subj=1.56, Vote=-1, Conf=0.90, Co=0.52, WeightedVote=-13.58
+  Avaliador 4: ExpEst=6, Freq=0.23, Acc=6.02, Subj=2.11, Vote=0, Conf=1.00, Co=0.97, WeightedVote=0.00
+  Avaliador 5: ExpEst=3, Freq=0.65, Acc=2.39, Subj=1.48, Vote=2, Conf=0.90, Co=0.64, WeightedVote=13.52
+  -> CDF: 0.5021
+  -> IC: 0.3571
+  -> coScoreTotal: 0.5852
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 98/100 ---
+  Avaliador 1: ExpEst=8, Freq=0.31, Acc=5.81, Subj=4.66, Vote=2, Conf=0.90, Co=0.47, WeightedVote=33.79
+  Avaliador 2: ExpEst=3, Freq=0.71, Acc=4.36, Subj=4.72, Vote=0, Conf=1.00, Co=0.02, WeightedVote=0.00
+  Avaliador 3: ExpEst=5, Freq=0.58, Acc=7.32, Subj=2.11, Vote=0, Conf=1.10, Co=0.44, WeightedVote=0.00
+  Avaliador 4: ExpEst=5, Freq=1.62, Acc=3.60, Subj=2.47, Vote=-1, Conf=0.90, Co=0.84, WeightedVote=-11.42
+  Avaliador 5: ExpEst=2, Freq=0.24, Acc=0.52, Subj=4.34, Vote=-2, Conf=1.10, Co=0.56, WeightedVote=-15.63
+  -> CDF: 0.4256
+  -> IC: 0.0714
+  -> coScoreTotal: 0.4644
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Inconclusivo
+  -> Conclusão fixo_04_06: Inconclusivo
+  -> Conclusão podado_v1: Inconclusivo
+
+
+--- Rodada 99/100 ---
+  Avaliador 1: ExpEst=2, Freq=0.30, Acc=0.55, Subj=3.63, Vote=-2, Conf=0.90, Co=0.38, WeightedVote=-11.67
+  Avaliador 2: ExpEst=2, Freq=1.35, Acc=2.53, Subj=4.60, Vote=2, Conf=0.90, Co=0.80, WeightedVote=18.86
+  Avaliador 3: ExpEst=4, Freq=1.01, Acc=1.26, Subj=1.38, Vote=-2, Conf=1.10, Co=0.48, WeightedVote=-16.83
+  Avaliador 4: ExpEst=7, Freq=0.79, Acc=3.74, Subj=2.29, Vote=-1, Conf=0.90, Co=0.37, WeightedVote=-12.44
+  Avaliador 5: ExpEst=4, Freq=0.58, Acc=1.54, Subj=1.92, Vote=-1, Conf=1.00, Co=0.01, WeightedVote=-8.04
+  -> CDF: 0.12
+  -> IC: 0.5556
+  -> coScoreTotal: 0.4074
+  -> Conclusão nao_podado_v3: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_0225_0775: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_03_07: Conteúdo Notoriamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Notoriamente Inverídico
+  -> Conclusão podado_v1: Conteúdo Notoriamente Inverídico
+
+
+--- Rodada 100/100 ---
+  Avaliador 1: ExpEst=5, Freq=0.08, Acc=7.65, Subj=2.54, Vote=2, Conf=1.00, Co=0.09, WeightedVote=30.53
+  Avaliador 2: ExpEst=7, Freq=1.46, Acc=1.32, Subj=1.55, Vote=0, Conf=1.00, Co=0.70, WeightedVote=0.00
+  Avaliador 3: ExpEst=6, Freq=1.01, Acc=1.90, Subj=1.74, Vote=1, Conf=1.10, Co=0.94, WeightedVote=11.72
+  Avaliador 4: ExpEst=2, Freq=1.23, Acc=3.10, Subj=2.25, Vote=1, Conf=1.00, Co=0.08, WeightedVote=8.59
+  Avaliador 5: ExpEst=6, Freq=1.17, Acc=6.26, Subj=2.36, Vote=-2, Conf=0.90, Co=0.79, WeightedVote=-28.43
+  -> CDF: 0.701
+  -> IC: 0.2857
+  -> coScoreTotal: 0.5187
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Inconclusivo
+

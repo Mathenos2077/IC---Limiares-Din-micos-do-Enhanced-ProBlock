@@ -1,0 +1,40 @@
+
+--- Rodada 33/100 ---
+  Avaliador 1: ExpEst=7, Freq=0.28, Acc=0.05, Subj=3.21, Vote=1, Conf=1.10, Co=0.82, WeightedVote=11.60
+  Avaliador 2: ExpEst=7, Freq=1.15, Acc=0.29, Subj=4.18, Vote=0, Conf=1.00, Co=0.54, WeightedVote=0.00
+  Avaliador 3: ExpEst=4, Freq=0.65, Acc=3.95, Subj=1.01, Vote=-2, Conf=1.00, Co=0.62, WeightedVote=-19.21
+  Avaliador 4: ExpEst=6, Freq=0.58, Acc=4.44, Subj=2.19, Vote=0, Conf=1.10, Co=0.98, WeightedVote=0.00
+  Avaliador 5: ExpEst=8, Freq=0.91, Acc=0.63, Subj=4.41, Vote=-2, Conf=1.00, Co=0.46, WeightedVote=-27.88
+  -> CDF: 0.2435
+  -> IC: 0.3889
+  -> coScoreTotal: 0.6825
+  -> Conclusão nao_podado_v3: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Inverídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Inverídico
+  -> Conclusão podado_v1: Inconclusivo
+  -> DIVERGÊNCIA IDENTIFICADA: nao_podado_v3 (Conteúdo Sugestivamente Inverídico) vs podado_v1 (Inconclusivo)
+------------------------------------------------------------
+
+
+--- Rodada 44/100 ---
+  Avaliador 1: ExpEst=5, Freq=0.50, Acc=2.83, Subj=3.96, Vote=-1, Conf=0.90, Co=0.98, WeightedVote=-11.06
+  Avaliador 2: ExpEst=6, Freq=0.48, Acc=2.24, Subj=1.13, Vote=2, Conf=1.10, Co=0.90, WeightedVote=21.67
+  Avaliador 3: ExpEst=8, Freq=1.21, Acc=3.00, Subj=3.47, Vote=2, Conf=1.10, Co=0.48, WeightedVote=34.51
+  Avaliador 4: ExpEst=2, Freq=1.37, Acc=3.45, Subj=2.67, Vote=0, Conf=1.00, Co=0.91, WeightedVote=0.00
+  Avaliador 5: ExpEst=7, Freq=0.11, Acc=4.70, Subj=2.05, Vote=0, Conf=1.10, Co=0.89, WeightedVote=0.00
+  -> CDF: 0.7662
+  -> IC: 0.3889
+  -> coScoreTotal: 0.8333
+  -> Conclusão nao_podado_v3: Inconclusivo
+  -> Conclusão fixo_01_09: Inconclusivo
+  -> Conclusão fixo_02_08: Inconclusivo
+  -> Conclusão fixo_0225_0775: Inconclusivo
+  -> Conclusão fixo_03_07: Conteúdo Sugestivamente Verídico
+  -> Conclusão fixo_04_06: Conteúdo Sugestivamente Verídico
+  -> Conclusão podado_v1: Conteúdo Sugestivamente Verídico
+  -> DIVERGÊNCIA IDENTIFICADA: nao_podado_v3 (Inconclusivo) vs podado_v1 (Conteúdo Sugestivamente Verídico)
+------------------------------------------------------------
+

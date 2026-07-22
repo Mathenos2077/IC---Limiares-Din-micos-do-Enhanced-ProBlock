@@ -1,0 +1,64 @@
+
+========================================
+     RELATÓRIO FINAL DA SIMULAÇÃO
+========================================
+
+Total de Rodadas: 10000
+Avaliadores por Rodada: 5
+
+---------------   MODELO: NAO_PODADO_V3   -----------------------
+Conteúdo Notoriamente Inverídico: 1239
+Conteúdo Sugestivamente Inverídico: 661
+Inconclusivo: 6150
+Conteúdo Sugestivamente Verídico: 748
+Conteúdo Notoriamente Verídico: 1198
+Taxa de Conclusão: 0.38
+
+---------------   MODELO: FIXO_01_09   -----------------------
+Conteúdo Notoriamente Inverídico: 665
+Conteúdo Sugestivamente Inverídico: 353
+Inconclusivo: 7979
+Conteúdo Sugestivamente Verídico: 367
+Conteúdo Notoriamente Verídico: 632
+Taxa de Conclusão: 0.20
+
+---------------   MODELO: FIXO_02_08   -----------------------
+Conteúdo Notoriamente Inverídico: 1018
+Conteúdo Sugestivamente Inverídico: 873
+Inconclusivo: 6148
+Conteúdo Sugestivamente Verídico: 958
+Conteúdo Notoriamente Verídico: 999
+Taxa de Conclusão: 0.38
+
+---------------   MODELO: FIXO_0225_0775   -----------------------
+Conteúdo Notoriamente Inverídico: 1169
+Conteúdo Sugestivamente Inverídico: 996
+Inconclusivo: 5721
+Conteúdo Sugestivamente Verídico: 1041
+Conteúdo Notoriamente Verídico: 1069
+Taxa de Conclusão: 0.43
+
+---------------   MODELO: FIXO_03_07   -----------------------
+Conteúdo Notoriamente Inverídico: 1473
+Conteúdo Sugestivamente Inverídico: 1369
+Inconclusivo: 4265
+Conteúdo Sugestivamente Verídico: 1416
+Conteúdo Notoriamente Verídico: 1473
+Taxa de Conclusão: 0.57
+
+---------------   MODELO: FIXO_04_06   -----------------------
+Conteúdo Notoriamente Inverídico: 1891
+Conteúdo Sugestivamente Inverídico: 2040
+Inconclusivo: 2149
+Conteúdo Sugestivamente Verídico: 1959
+Conteúdo Notoriamente Verídico: 1957
+Taxa de Conclusão: 0.79
+
+---------------   MODELO: PODADO_V1   -----------------------
+Conteúdo Notoriamente Inverídico: 1241
+Conteúdo Sugestivamente Inverídico: 651
+Inconclusivo: 6166
+Conteúdo Sugestivamente Verídico: 738
+Conteúdo Notoriamente Verídico: 1200
+Taxa de Conclusão: 0.38
+--------------------------------------------------------------

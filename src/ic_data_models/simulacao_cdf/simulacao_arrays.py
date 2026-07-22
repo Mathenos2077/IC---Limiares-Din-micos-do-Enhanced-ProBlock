@@ -8,7 +8,8 @@ factCheckers = []
 weightedVotes = []
 
 
-expScoreEstaticoArray = [2, 8, 5, 2, 5, 8, 7, 7, 4, 7]
+yrsScoreArray = [1, 3, 2, 1, 2, 3, 3, 3, 1, 3]
+orgScoreArray = [1, 5, 3, 1, 3, 5, 4, 4, 3, 4]
 freqScoreArray = [1, 1, 2, 0, 2, 0, 2, 2, 0, 1]
 accScoreArray = [2, 8, 7, 4, 3, 4, 4, 8, 5, 8]
 subjectScoreArray = [5, 1, 5, 4, 3, 1, 1, 4, 1, 3]
@@ -17,9 +18,10 @@ newsVoteArray = [2, -2, 2, 0, -2, -2, -2, -2, -2, -2]
 
 coScoreMedioArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-for i in range(len(expScoreEstaticoArray)):
+for i in range(len(yrsScoreArray)):
     factCheckers.append(FactChecker(
-        expScoreEstaticoArray[i], 
+        yrsScoreArray[i],
+        orgScoreArray[i],
         freqScoreArray[i], 
         accScoreArray[i], 
         subjectScoreArray[i], 

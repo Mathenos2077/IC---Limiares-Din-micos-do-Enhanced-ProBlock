@@ -3,20 +3,18 @@ import utils
 import numpy as np
 from scipy.stats import norm
 import random
+import matplotlib.pyplot as plt
 
 # Configurações da Simulação
 N = 5  # Número de avaliadores por rodada
-M = 200 # Número de rodadas
+M = 100 # Número de rodadas
 DETALHAR_RODADAS = True # Se True, imprime os detalhes de cada avaliador em cada rodada
 APENAS_DIVERGENTES = True # Se True, mostra apenas rodadas com divergência de conclusividade
-MODELOS_PARA_TESTAR = ["podado_v1", "podado_v2"] # Modelos a serem avaliados
+SALVAR_RESULTADOS = True # Se True, salva os resultados das avaliações e divergências em .txt
+MODELO_BASE = "nao_podado_v3" # Modelo base para comparação
+MODELOS_PARA_TESTAR = ["fixo_01_09", "fixo_02_08", "fixo_0225_0775", "fixo_03_07", "fixo_04_06", "podado_v1"] # Modelos a serem testados e comparados ao base
 
-# Contadores para os relatórios
-relatorio_antigo = {
-    "Conteúdo Notoriamente Inverídico": 0,
-    "Inconclusivo": 0,
-    "Conteúdo Notoriamente Verídico": 0
-}
+MODELOS_TOTAIS = [MODELO_BASE] + [m for m in MODELOS_PARA_TESTAR if m != MODELO_BASE]
 
 relatorios_modelos = {
     modelo: {
@@ -25,24 +23,24 @@ relatorios_modelos = {
         "Inconclusivo": 0,
         "Conteúdo Sugestivamente Verídico": 0,
         "Conteúdo Notoriamente Verídico": 0
-    } for modelo in MODELOS_PARA_TESTAR
+    } for modelo in MODELOS_TOTAIS
 }
 
-divergencias_modelos = {
-    modelo: {
-        "antigo_conclusivo_novo_inconclusivo": 0,
-        "antigo_inconclusivo_novo_conclusivo": 0
-    } for modelo in MODELOS_PARA_TESTAR
-}
+if SALVAR_RESULTADOS:
+    arquivo_avaliacoes = open("avaliacoes.txt", "w", encoding="utf-8")
+    arquivos_divergencias = {}
+    for modelo in MODELOS_PARA_TESTAR:
+        if modelo != MODELO_BASE:
+            arquivos_divergencias[modelo] = open(f"divergencias_{MODELO_BASE}_vs_{modelo}.txt", "w", encoding="utf-8")
 
 print(f"Iniciando simulação com {M} rodadas e {N} avaliadores por rodada...")
 
 for i in range(M):
     log_buffer = []
+    
     def log(msg):
-        if APENAS_DIVERGENTES:
-            log_buffer.append(msg)
-        elif DETALHAR_RODADAS:
+        log_buffer.append(msg)
+        if not APENAS_DIVERGENTES and DETALHAR_RODADAS:
             print(msg)
 
     if not DETALHAR_RODADAS and not APENAS_DIVERGENTES:
@@ -63,6 +61,9 @@ for i in range(M):
         confidenceScore = random.randint(1, 3)
         coScoreMedio = random.uniform(0, 1)
 
+        # Normaliza o confidenceScore entre 0.9 e 1.1
+        confidenceScore = 0.9 + ((confidenceScore - 1) / 2) * 0.2
+
         checker = FactChecker(
             expScoreEstatico,
             freqScore,
@@ -75,43 +76,39 @@ for i in range(M):
         factCheckers.append(checker)
         weightedVotes.append(checker.getWeightedVote())
         
-        if DETALHAR_RODADAS or APENAS_DIVERGENTES:
-            log(f"  Avaliador {j+1}: ExpEst={expScoreEstatico}, Freq={freqScore:.2f}, Acc={accScore:.2f}, Subj={subjectScore:.2f}, Vote={newsVote}, Conf={confidenceScore}, Co={coScoreMedio:.2f}, WeightedVote={weightedVotes[-1]:.2f}")
+        log(f"  Avaliador {j+1}: ExpEst={expScoreEstatico}, Freq={freqScore:.2f}, Acc={accScore:.2f}, Subj={subjectScore:.2f}, Vote={newsVote}, Conf={confidenceScore:.2f}, Co={coScoreMedio:.2f}, WeightedVote={weightedVotes[-1]:.2f}")
 
-    # Calcular CDF e Limiares
+    # Calcular CDF, Parâmetros e Limiares
     if np.std(weightedVotes) == 0:
-        if DETALHAR_RODADAS or APENAS_DIVERGENTES:
-            log("  [!] Desvio padrão zero. Rodada ignorada.")
+        log("  [!] Desvio padrão zero. Rodada ignorada.")
+        if SALVAR_RESULTADOS:
+            arquivo_avaliacoes.write("\n".join(log_buffer) + "\n\n")
         continue
 
     cdf = round(utils.getCDF(weightedVotes), 4)
     
-    if DETALHAR_RODADAS or APENAS_DIVERGENTES:
-        log(f"  -> CDF: {cdf}")
-
-    # Classificação Modelo Antigo
-    limDownAntigo = 0.225
-    limUpAntigo = 0.775
-
-    conclusao_antigo = ""
-    if 0 <= cdf <= limDownAntigo:
-        conclusao_antigo = "Conteúdo Notoriamente Inverídico"
-    elif limDownAntigo < cdf <= limUpAntigo:
-        conclusao_antigo = "Inconclusivo"
-    elif limUpAntigo < cdf <= 1:
-        conclusao_antigo = "Conteúdo Notoriamente Verídico"
+    # Calcular IC, coScoreTotal e subjectScoreTotal para a rodada
+    newsVoteArray = [checker.newsVote for checker in factCheckers]
+    coScoreArray = [checker.coScoreMedio for checker in factCheckers]
+    subjectScoreArray = [checker.subjectScore for checker in factCheckers]
     
-    if conclusao_antigo:
-        relatorio_antigo[conclusao_antigo] += 1
+    IC = round(utils.getIC(newsVoteArray), 4)
+    coScoreTotal = round(utils.getCoScore(coScoreArray), 4)
+    subjectScoreTotal = round(utils.getSubjectScore(subjectScoreArray), 4)
+
+    log(f"  -> CDF: {cdf}")
+    log(f"  -> IC: {IC}")
+    log(f"  -> coScoreTotal: {coScoreTotal}")
+    #   log(f"  -> subjectScoreTotal: {subjectScoreTotal}")
 
     conclusoes_modelos = {}
 
-    for modelo in MODELOS_PARA_TESTAR:
+    for modelo in MODELOS_TOTAIS:
         limiarScore = round(utils.getLimiarScore(factCheckers, model=modelo), 4)
         
-        if DETALHAR_RODADAS or APENAS_DIVERGENTES:
-            log(f"  -> LimiarScore ({modelo}): {limiarScore}")
-
+       # if DETALHAR_RODADAS or APENAS_DIVERGENTES:
+        #    log(f"  -> LimiarScore ({modelo}): {limiarScore}")
+        
         limDown = round(limiarScore / 2, 2)
         limDownEx = round(limDown / 2, 2)
         limUp = round(1 - (limiarScore / 2), 2)
@@ -134,56 +131,60 @@ for i in range(M):
         if conclusao_modelo:
             relatorios_modelos[modelo][conclusao_modelo] += 1
 
-        if conclusao_antigo != "Inconclusivo" and conclusao_modelo == "Inconclusivo":
-            divergencias_modelos[modelo]["antigo_conclusivo_novo_inconclusivo"] += 1
-        elif conclusao_antigo == "Inconclusivo" and conclusao_modelo != "Inconclusivo":
-            divergencias_modelos[modelo]["antigo_inconclusivo_novo_conclusivo"] += 1
-
-    # Determina se houve divergência na conclusividade *entre os modelos testados*
+    # Determina se houve divergência na conclusividade *entre o modelo base e os testados*
     # para decidir se a rodada deve ser exibida quando APENAS_DIVERGENTES=True.
-    # A rodada é exibida se houver tanto modelos conclusivos quanto inconclusivos.
     houve_divergencia = False
-    if len(conclusoes_modelos) > 1:
-        conclusividades = {c == "Inconclusivo" for c in conclusoes_modelos.values()}
-        if len(conclusividades) > 1:
+    for modelo in MODELOS_PARA_TESTAR:
+        if modelo != MODELO_BASE and conclusoes_modelos[modelo] != conclusoes_modelos[MODELO_BASE]:
             houve_divergencia = True
+            break
             
-    if DETALHAR_RODADAS or APENAS_DIVERGENTES:
-        log(f"  -> Conclusão Antigo: {conclusao_antigo}")
-        for modelo, conclusao in conclusoes_modelos.items():
-            log(f"  -> Conclusão {modelo}: {conclusao}")
+    for modelo in MODELOS_TOTAIS:
+        log(f"  -> Conclusão {modelo}: {conclusoes_modelos[modelo]}")
+
+    texto_rodada = "\n".join(log_buffer) + "\n"
+    
+    if SALVAR_RESULTADOS:
+        arquivo_avaliacoes.write(texto_rodada + "\n")
+        for modelo in MODELOS_PARA_TESTAR:
+            if modelo != MODELO_BASE:
+                if conclusoes_modelos[MODELO_BASE] != conclusoes_modelos[modelo]:
+                    arquivos_divergencias[modelo].write(texto_rodada)
+                    arquivos_divergencias[modelo].write(f"  -> DIVERGÊNCIA IDENTIFICADA: {MODELO_BASE} ({conclusoes_modelos[MODELO_BASE]}) vs {modelo} ({conclusoes_modelos[modelo]})\n")
+                    arquivos_divergencias[modelo].write("-" * 60 + "\n\n")
 
     if APENAS_DIVERGENTES and houve_divergencia:
         for linha in log_buffer:
             print(linha)
 
 # Imprimir Relatório Final
-print("\n" + "="*40)
-print("     RELATÓRIO FINAL DA SIMULAÇÃO")
-print("="*40)
+relatorio_texto = []
+relatorio_texto.append("\n" + "="*40)
+relatorio_texto.append("     RELATÓRIO FINAL DA SIMULAÇÃO")
+relatorio_texto.append("="*40)
 
-print(f"\nTotal de Rodadas: {M}")
-print(f"Avaliadores por Rodada: {N}")
+relatorio_texto.append(f"\nTotal de Rodadas: {M}")
+relatorio_texto.append(f"Avaliadores por Rodada: {N}")
 
-print("\n---------------   LIMIARES ANTIGOS   -----------------------")
-for k, v in relatorio_antigo.items():
-    print(f"{k}: {v}")
-
-conclusivas_antigo = sum(v for k, v in relatorio_antigo.items() if k != "Inconclusivo")
-total_antigo = sum(relatorio_antigo.values())
-taxa_antigo = conclusivas_antigo / total_antigo if total_antigo > 0 else 0
-print(f"Taxa de Conclusão: {taxa_antigo:.2f}")
-
-for modelo in MODELOS_PARA_TESTAR:
-    print(f"\n---------------   MODELO: {modelo.upper()}   -----------------------")
+for modelo in MODELOS_TOTAIS:
+    relatorio_texto.append(f"\n---------------   MODELO: {modelo.upper()}   -----------------------")
     for k, v in relatorios_modelos[modelo].items():
-        print(f"{k}: {v}")
+        relatorio_texto.append(f"{k}: {v}")
 
     conclusivas_novo = sum(v for k, v in relatorios_modelos[modelo].items() if k != "Inconclusivo")
     total_novo = sum(relatorios_modelos[modelo].values())
     taxa_novo = conclusivas_novo / total_novo if total_novo > 0 else 0
-    print(f"Taxa de Conclusão: {taxa_novo:.2f}")
-    print(f"Antigo Conclusivo / Novo Inconclusivo: {divergencias_modelos[modelo]['antigo_conclusivo_novo_inconclusivo']}")
-    print(f"Antigo Inconclusivo / Novo Conclusivo: {divergencias_modelos[modelo]['antigo_inconclusivo_novo_conclusivo']}")
+    relatorio_texto.append(f"Taxa de Conclusão: {taxa_novo:.2f}")
 
-print("--------------------------------------------------------------")
+relatorio_texto.append("--------------------------------------------------------------")
+
+texto_final = "\n".join(relatorio_texto)
+print(texto_final)
+
+if SALVAR_RESULTADOS:
+    with open("relatorio_final.txt", "w", encoding="utf-8") as f_relatorio:
+        f_relatorio.write(texto_final + "\n")
+
+    arquivo_avaliacoes.close()
+    for f in arquivos_divergencias.values():
+        f.close()

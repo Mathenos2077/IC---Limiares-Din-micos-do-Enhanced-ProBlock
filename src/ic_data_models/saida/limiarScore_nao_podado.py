@@ -136,8 +136,8 @@ def getLimiarScore_Nao_Podado(coScoreTotal, IC, subejctScoreTotal, isNormalizado
 
 if __name__ == "__main__":
     print("LimiarScore: ", getLimiarScore_Nao_Podado(
-        1, # IC
-        1, # coScoreTotal
-        1, # subjectScoreTotal
+        0.6456, # coScoreTotal
+        0.3, # IC
+        0.5731, # subjectScoreTotal
         True # isNormalizado  
     ))

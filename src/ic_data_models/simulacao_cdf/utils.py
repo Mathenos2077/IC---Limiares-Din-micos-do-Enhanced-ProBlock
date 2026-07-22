@@ -10,6 +10,8 @@ import ic_data_models.saida.limiarScore_podado    as limiarScorePodado
 import ic_data_models.saida.limiarScore_nao_podado as limiarScoreNaoPodado
 import ic_data_models.saida.limiarScore_podado_v2 as limiarScorePodadoV2
 import ic_data_models.saida.limiarScore_nao_podado_v2 as limiarScoreNaoPodadoV2
+import ic_data_models.saida.limiarScore_nao_podado_v3 as limiarScoreNaoPodadoV3
+
 
 
 
@@ -21,13 +23,15 @@ class FactChecker:
     Todos os cálculos para a obtenção das variáveis de entrada são abstraidos, requisitando somente os valores delas.
     
     '''
-    def __init__(self, expScoreEstatico, freqScore, accScore, subjectScore, newsVote, confidenceScore, coScoreMedio):
+    def __init__(self, yrsScore, orgScore, freqScore, accScore, subjectScore, newsVote, confidenceScore, coScoreMedio):
         '''
         Cria um novo fact-checker com atributos pré-definidos
         
         :param self: self
-        :param expScoreEstatico: Componente estática do expScore.
-            Assume valores inteiros entre 2 e 8.
+        :param yrsScore: Anos de experiência do avaliador.
+            Assume valores inteiros entre 1 e 3.
+        :param orgScore: Reputação da organização do avaliador.
+            Assume valores inteiros entre 1 e 5.
         :param freqScore: Quantidade média de avaliações do fact-checker. 
             Assume valores inteiros entre 0 e 2.
         :param accScore: Acurácia do fact-checker (numero de acertos / numero de avaliacoes).
@@ -40,13 +44,17 @@ class FactChecker:
         :param confidenceScore: Confiança do fact-checker na notícia analisada. 
             1 - Não confiante; 2 - Confiante; 3 - Altamente Confiante
         '''
-        self.expScoreEstatico = expScoreEstatico
+        self.yrsScore = yrsScore
+        self.orgScore = orgScore
         self.freqScore = freqScore
         self.accScore = accScore
         self.subjectScore = subjectScore
         self.newsVote = newsVote
         self.confidenceScore = confidenceScore
         self.coScoreMedio = coScoreMedio
+
+    def getExpScoreEstatico(self):
+        return self.yrsScore + self.orgScore
 
     def getExpScoreDinamico(self):
         '''
@@ -62,7 +70,7 @@ class FactChecker:
         
         :param self: self
         '''
-        return self.expScoreEstatico + self.getExpScoreDinamico()
+        return self.getExpScoreEstatico() + self.getExpScoreDinamico()
     
     def getCummVote(self):
         '''
@@ -92,10 +100,18 @@ def getCDF(weightedVotes):
     media = np.average(weightedVotes)
     desvioPadrao = np.std(weightedVotes)
 
+    if desvioPadrao == 0:
+        if weightedVotes[0] < 0:
+            return 0
+        elif weightedVotes[0] > 0:
+            return 1
+        else:
+            return 0.5
+
     componentesBetaX = []
 
     for item in weightedVotes:
-        betaI = (1 / (desvioPadrao * np.sqrt(np.pi * 2))) * np.exp(-(np.square(item - media) / (2 * np.square(desvioPadrao))))
+        betaI = (1 / (desvioPadrao * np.sqrt(np.pi * 2))) * np.exp(-(np.square(item - media) / (4 * np.square(desvioPadrao))))
         componentesBetaX.append(betaI * item)
     
     betaX = sum(componentesBetaX)
@@ -113,6 +129,7 @@ def getLimiarScore(factCheckers, model="podado_v1"):
                   - 'nao_podado_v1': Modelo original completo.
                   - 'podado_v2': Versão 2 do modelo com regras podadas.
                   - 'nao_podado_v2': Versão 2 do modelo completo.
+                  - 'nao_podado_v3': Versão 3 do modelo completo.
     """
     ICArray = [0, 0, 0, 0, 0] # Indica, respectivamente, a quantidade de votos -2, -1, 0, 1 e 2
     coScoreArray = []
@@ -150,6 +167,21 @@ def getLimiarScore(factCheckers, model="podado_v1"):
         return limiarScorePodadoV2.getLimiarScore_Podado_v2(coScoreTotal, IC, subjectScoreTotal, True)
     elif model == "nao_podado_v2":
         return limiarScoreNaoPodadoV2.getLimiarScore_Nao_Podado_v2(coScoreTotal, IC, subjectScoreTotal, True)
+    elif model == "nao_podado_v3":
+        return limiarScoreNaoPodadoV3.getLimiarScore_Nao_Podado_v3(coScoreTotal, IC, True)
+    elif model == "fixo_01_09":
+        return 0.2
+    elif model == "fixo_02_08":
+        return 0.4
+    elif model == "fixo_03_07":
+        return 0.6
+    elif model == "fixo_04_06":
+        return 0.8
+    elif model == "fixo_05_05":
+        return 1.0
+    elif model == "fixo_0225_0775":
+        return 0.45
+
     else:
         raise ValueError(f"Modelo '{model}' desconhecido.")
 
@@ -169,7 +201,7 @@ def getIC(newsVoteArray):
                 case 2:
                     ICArray[4] += 1 
         
-    return icCalc.getIC(ICArray)
+    return icCalc.getIC(ICArray, True)
 
 
 def getCoScore(coScoreArray):
