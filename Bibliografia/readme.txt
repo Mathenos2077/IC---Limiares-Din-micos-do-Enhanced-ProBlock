@@ -1,0 +1,1 @@
+Esta pasta contém parte da bibliografia utilizada durante o desenvolvimento do projeto.
