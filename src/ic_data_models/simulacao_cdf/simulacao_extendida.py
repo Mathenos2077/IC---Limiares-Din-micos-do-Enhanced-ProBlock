@@ -10,7 +10,7 @@ N = 5  # Número de avaliadores por rodada
 M = 100 # Número de rodadas
 DETALHAR_RODADAS = True # Se True, imprime os detalhes de cada avaliador em cada rodada
 APENAS_DIVERGENTES = True # Se True, mostra apenas rodadas com divergência de conclusividade
-SALVAR_RESULTADOS = True # Se True, salva os resultados das avaliações e divergências em .txt
+SALVAR_RESULTADOS = False # Se True, salva os resultados das avaliações e divergências em .txt
 MODELO_BASE = "nao_podado_v3" # Modelo base para comparação
 MODELOS_PARA_TESTAR = ["fixo_01_09", "fixo_02_08", "fixo_0225_0775", "fixo_03_07", "fixo_04_06", "podado_v1"] # Modelos a serem testados e comparados ao base
 
@@ -53,7 +53,8 @@ for i in range(M):
 
     # Gerar avaliadores aleatórios
     for j in range(N):
-        expScoreEstatico = random.randint(2, 8)
+        yrsScore = random.randint(1, 3)
+        orgScore = random.randint(1, 5)
         freqScore = random.uniform(0, 2)
         accScore = random.uniform(0, 8)
         subjectScore = random.uniform(1, 5)
@@ -65,7 +66,8 @@ for i in range(M):
         confidenceScore = 0.9 + ((confidenceScore - 1) / 2) * 0.2
 
         checker = FactChecker(
-            expScoreEstatico,
+            yrsScore,
+            orgScore,
             freqScore,
             accScore,
             subjectScore,
@@ -76,7 +78,7 @@ for i in range(M):
         factCheckers.append(checker)
         weightedVotes.append(checker.getWeightedVote())
         
-        log(f"  Avaliador {j+1}: ExpEst={expScoreEstatico}, Freq={freqScore:.2f}, Acc={accScore:.2f}, Subj={subjectScore:.2f}, Vote={newsVote}, Conf={confidenceScore:.2f}, Co={coScoreMedio:.2f}, WeightedVote={weightedVotes[-1]:.2f}")
+        log(f"  Avaliador {j+1}: ExpEst={yrsScore + orgScore}, Freq={freqScore:.2f}, Acc={accScore:.2f}, Subj={subjectScore:.2f}, Vote={newsVote}, Conf={confidenceScore:.2f}, Co={coScoreMedio:.2f}, WeightedVote={weightedVotes[-1]:.2f}")
 
     # Calcular CDF, Parâmetros e Limiares
     if np.std(weightedVotes) == 0:

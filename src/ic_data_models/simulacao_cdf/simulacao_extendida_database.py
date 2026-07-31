@@ -8,9 +8,9 @@ import db_insert as db
 # Configurações da Simulação
 N = 5  # Número de avaliadores por rodada
 M = 10000 # Número de rodadas
-DETALHAR_RODADAS = False # Se True, imprime os detalhes de cada avaliador em cada rodada
-APENAS_DIVERGENTES = False # Se True, mostra apenas rodadas com divergência de conclusividade
-SALVAR_NO_DB = True # Se True, salva os resultados no banco de dados DuckDB
+DETALHAR_RODADAS = True # Se True, imprime os detalhes de cada avaliador em cada rodada
+APENAS_DIVERGENTES = True # Se True, mostra apenas rodadas com divergência de conclusividade
+SALVAR_NO_DB = False # Se True, salva os resultados no banco de dados DuckDB
 
 MODELO_BASE = "nao_podado_v3" # Modelo base para comparação
 MODELOS_PARA_TESTAR = ["fixo_01_09", "fixo_02_08", "fixo_0225_0775", "fixo_03_07", "fixo_04_06", "podado_v1"] # Modelos a serem testados e comparados ao base
