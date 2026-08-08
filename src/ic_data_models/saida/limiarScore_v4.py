@@ -76,15 +76,11 @@ sim.input["coEscore"] = 1
 sim.compute()
 max_score = sim.output["limiarScore"]
 
-def getLimiarScore_v4(coScoreTotal, newsVoteArray, subjectScoreArray, isNormalizado=False):
+def getLimiarScore_v4(coScoreTotal, IC, isNormalizado=False):
 
-    for i, newsVote, subjectScore in zip(range(len(newsVoteArray)), newsVoteArray, subjectScoreArray):
-        
-        
     sim.input["ic"] = IC
     sim.input["coEscore"] = coScoreTotal
     sim.compute()
-
 
     if isNormalizado == True:
         return (sim.output["limiarScore"] - min_score) / (max_score - min_score) # Normalizado
