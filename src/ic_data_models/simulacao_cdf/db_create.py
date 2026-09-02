@@ -1,7 +1,7 @@
 import duckdb
 
 # db para simulações com novos fact-checkers gerados aleatoriamente a cada rodada
-#conn = duckdb.connect('simulacoes.duckdb')
+conn = duckdb.connect('simulacoes.duckdb')
 
 # db para simulações com preservação e gerenciamento de fact-checkers (votos gerados aleatoriamente)
 
@@ -74,7 +74,5 @@ print("Tabelas criadas com sucesso no DuckDB!")
 tabelas = conn.execute("SHOW TABLES").df()
 print("\nTabelas existentes no banco:")
 print(tabelas)
-
-print(duckdb.__version__)
 
 conn.close()

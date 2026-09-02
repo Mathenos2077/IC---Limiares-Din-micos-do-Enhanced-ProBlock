@@ -7,13 +7,17 @@ import db_insert as db
 
 # Configurações da Simulação
 N = 5  # Número de avaliadores por rodada
-M = 10000 # Número de rodadas
-DETALHAR_RODADAS = True # Se True, imprime os detalhes de cada avaliador em cada rodada
-APENAS_DIVERGENTES = True # Se True, mostra apenas rodadas com divergência de conclusividade
-SALVAR_NO_DB = False # Se True, salva os resultados no banco de dados DuckDB
+M = 1000 # Número de rodadas
+DETALHAR_RODADAS = False # Se True, imprime os detalhes de cada avaliador em cada rodada
+APENAS_DIVERGENTES = False # Se True, mostra apenas rodadas com divergência de conclusividade
+SALVAR_NO_DB = True # Se True, salva os resultados no banco de dados DuckDB
 
 MODELO_BASE = "nao_podado_v3" # Modelo base para comparação
-MODELOS_PARA_TESTAR = ["fixo_01_09", "fixo_02_08", "fixo_0225_0775", "fixo_03_07", "fixo_04_06", "podado_v1"] # Modelos a serem testados e comparados ao base
+MODELOS_PARA_TESTAR = [
+    "v4_IC_095_105", "v4_IC_090_110", "v4_IC_085_115", "v4_IC_080_120", 
+    "v4_IC_075_125", "v4_IC_070_130", "v4_IC_065_135", "v4_IC_060_140", 
+    "v4_IC_055_145", "v4_IC_050_150", "fixo_01_09", "fixo_02_08", 
+    "fixo_0225_0775", "fixo_03_07", "fixo_04_06", "podado_v1"]
 
 MODELOS_TOTAIS = [MODELO_BASE] + [m for m in MODELOS_PARA_TESTAR if m != MODELO_BASE]
 
@@ -125,11 +129,6 @@ for i in range(M):
     IC = round(utils.getIC(newsVoteArray), 4)
     coScoreTotal = round(utils.getCoScore(coScoreArray), 4)
     subjectScoreTotal = round(utils.getSubjectScore(subjectScoreArray), 4)
-
-    log(f"  -> CDF: {cdf}")
-    log(f"  -> IC: {IC}")
-    log(f"  -> coScoreTotal: {coScoreTotal}")
-    #   log(f"  -> subjectScoreTotal: {subjectScoreTotal}")
 
     conclusoes_modelos = {}
     limiar_score_base = 0.0

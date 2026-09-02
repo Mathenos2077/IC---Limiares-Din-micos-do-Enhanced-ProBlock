@@ -51,7 +51,7 @@ def getIC_v4(newsVoteArray, subjectScoreArray, min=0.5, max=1.5, square=True):
             return 0
         ic = sum(votosFinal) / soma_pontuacao
      
-    return ic/2
+    return abs(ic/2)
 
 ### Nova Função de Teste e Gráfico
 def plot_ic_sensibilidade(newsVoteArray, subjectScoreArray, range=[0, 1], passos=20, square=True):

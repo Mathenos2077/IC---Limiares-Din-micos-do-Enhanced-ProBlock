@@ -6,11 +6,13 @@ from scipy.stats import norm
 import ic_data_models.entradas.coScore.coScoreTotal as coScore
 import ic_data_models.entradas.subjectScore.getSubjectScoreTotal as subjectScore
 import ic_data_models.entradas.IC.ic_calculo as icCalc
+import ic_data_models.entradas.IC.ic_v4 as icV4
 import ic_data_models.saida.limiarScore_podado    as limiarScorePodado
 import ic_data_models.saida.limiarScore_nao_podado as limiarScoreNaoPodado
 import ic_data_models.saida.limiarScore_podado_v2 as limiarScorePodadoV2
 import ic_data_models.saida.limiarScore_nao_podado_v2 as limiarScoreNaoPodadoV2
 import ic_data_models.saida.limiarScore_nao_podado_v3 as limiarScoreNaoPodadoV3
+import ic_data_models.saida.limiarScore_v4 as limiarScoreV4
 
 
 
@@ -134,6 +136,7 @@ def getLimiarScore(factCheckers, model="podado_v1"):
     ICArray = [0, 0, 0, 0, 0] # Indica, respectivamente, a quantidade de votos -2, -1, 0, 1 e 2
     coScoreArray = []
     subjectScoreArray = []
+    newsVoteArray = []
 
     for x in factCheckers:
         match x.newsVote:
@@ -147,7 +150,8 @@ def getLimiarScore(factCheckers, model="podado_v1"):
                 ICArray[3] += 1
             case 2:
                 ICArray[4] += 1 
-        
+
+        newsVoteArray.append(x.newsVote)
         coScoreArray.append(x.coScoreMedio)
         subjectScoreArray.append(x.subjectScore)
 
@@ -169,6 +173,36 @@ def getLimiarScore(factCheckers, model="podado_v1"):
         return limiarScoreNaoPodadoV2.getLimiarScore_Nao_Podado_v2(coScoreTotal, IC, subjectScoreTotal, True)
     elif model == "nao_podado_v3":
         return limiarScoreNaoPodadoV3.getLimiarScore_Nao_Podado_v3(coScoreTotal, IC, True)
+    elif model == "v4_IC_095_105":
+        IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.95, 1.05, True)
+        return limiarScoreV4.getLimiarScore_v4(coScoreTotal, IC, True)
+    elif model == "v4_IC_090_110":
+        IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.90, 1.10, True)
+        return limiarScoreV4.getLimiarScore_v4(coScoreTotal, IC, True)
+    elif model == "v4_IC_085_115":
+        IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.85, 1.15, True)
+        return limiarScoreV4.getLimiarScore_v4(coScoreTotal, IC, True)
+    elif model == "v4_IC_080_120":
+        IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.80, 1.20, True)
+        return limiarScoreV4.getLimiarScore_v4(coScoreTotal, IC, True)
+    elif model == "v4_IC_075_125":
+        IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.75, 1.25, True)
+        return limiarScoreV4.getLimiarScore_v4(coScoreTotal, IC, True)
+    elif model == "v4_IC_070_130":
+        IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.70, 1.30, True)
+        return limiarScoreV4.getLimiarScore_v4(coScoreTotal, IC, True)
+    elif model == "v4_IC_065_135":
+        IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.65, 1.35, True)
+        return limiarScoreV4.getLimiarScore_v4(coScoreTotal, IC, True)
+    elif model == "v4_IC_060_140":
+        IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.60, 1.40, True)
+        return limiarScoreV4.getLimiarScore_v4(coScoreTotal, IC, True)
+    elif model == "v4_IC_055_145":
+        IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.55, 1.45, True)
+        return limiarScoreV4.getLimiarScore_v4(coScoreTotal, IC, True)
+    elif model == "v4_IC_050_150":
+        IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.50, 1.50, True)
+        return limiarScoreV4.getLimiarScore_v4(coScoreTotal, IC, True)
     elif model == "fixo_01_09":
         return 0.2
     elif model == "fixo_02_08":

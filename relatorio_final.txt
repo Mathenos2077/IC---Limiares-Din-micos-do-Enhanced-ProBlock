@@ -3,62 +3,142 @@
      RELATÓRIO FINAL DA SIMULAÇÃO
 ========================================
 
-Total de Rodadas: 10000
+Total de Rodadas: 1000
 Avaliadores por Rodada: 5
 
 ---------------   MODELO: NAO_PODADO_V3   -----------------------
-Conteúdo Notoriamente Inverídico: 1239
-Conteúdo Sugestivamente Inverídico: 661
-Inconclusivo: 6150
-Conteúdo Sugestivamente Verídico: 748
-Conteúdo Notoriamente Verídico: 1198
+Conteúdo Notoriamente Inverídico: 131
+Conteúdo Sugestivamente Inverídico: 71
+Inconclusivo: 609
+Conteúdo Sugestivamente Verídico: 62
+Conteúdo Notoriamente Verídico: 124
+Taxa de Conclusão: 0.39
+
+---------------   MODELO: V4_IC_095_105   -----------------------
+Conteúdo Notoriamente Inverídico: 130
+Conteúdo Sugestivamente Inverídico: 71
+Inconclusivo: 609
+Conteúdo Sugestivamente Verídico: 63
+Conteúdo Notoriamente Verídico: 124
+Taxa de Conclusão: 0.39
+
+---------------   MODELO: V4_IC_090_110   -----------------------
+Conteúdo Notoriamente Inverídico: 132
+Conteúdo Sugestivamente Inverídico: 69
+Inconclusivo: 608
+Conteúdo Sugestivamente Verídico: 64
+Conteúdo Notoriamente Verídico: 124
+Taxa de Conclusão: 0.39
+
+---------------   MODELO: V4_IC_085_115   -----------------------
+Conteúdo Notoriamente Inverídico: 132
+Conteúdo Sugestivamente Inverídico: 69
+Inconclusivo: 610
+Conteúdo Sugestivamente Verídico: 62
+Conteúdo Notoriamente Verídico: 124
+Taxa de Conclusão: 0.39
+
+---------------   MODELO: V4_IC_080_120   -----------------------
+Conteúdo Notoriamente Inverídico: 133
+Conteúdo Sugestivamente Inverídico: 67
+Inconclusivo: 609
+Conteúdo Sugestivamente Verídico: 63
+Conteúdo Notoriamente Verídico: 125
+Taxa de Conclusão: 0.39
+
+---------------   MODELO: V4_IC_075_125   -----------------------
+Conteúdo Notoriamente Inverídico: 131
+Conteúdo Sugestivamente Inverídico: 69
+Inconclusivo: 613
+Conteúdo Sugestivamente Verídico: 58
+Conteúdo Notoriamente Verídico: 126
+Taxa de Conclusão: 0.39
+
+---------------   MODELO: V4_IC_070_130   -----------------------
+Conteúdo Notoriamente Inverídico: 132
+Conteúdo Sugestivamente Inverídico: 69
+Inconclusivo: 612
+Conteúdo Sugestivamente Verídico: 60
+Conteúdo Notoriamente Verídico: 124
+Taxa de Conclusão: 0.39
+
+---------------   MODELO: V4_IC_065_135   -----------------------
+Conteúdo Notoriamente Inverídico: 132
+Conteúdo Sugestivamente Inverídico: 69
+Inconclusivo: 612
+Conteúdo Sugestivamente Verídico: 60
+Conteúdo Notoriamente Verídico: 124
+Taxa de Conclusão: 0.39
+
+---------------   MODELO: V4_IC_060_140   -----------------------
+Conteúdo Notoriamente Inverídico: 131
+Conteúdo Sugestivamente Inverídico: 69
+Inconclusivo: 615
+Conteúdo Sugestivamente Verídico: 57
+Conteúdo Notoriamente Verídico: 125
+Taxa de Conclusão: 0.38
+
+---------------   MODELO: V4_IC_055_145   -----------------------
+Conteúdo Notoriamente Inverídico: 131
+Conteúdo Sugestivamente Inverídico: 67
+Inconclusivo: 618
+Conteúdo Sugestivamente Verídico: 55
+Conteúdo Notoriamente Verídico: 126
+Taxa de Conclusão: 0.38
+
+---------------   MODELO: V4_IC_050_150   -----------------------
+Conteúdo Notoriamente Inverídico: 130
+Conteúdo Sugestivamente Inverídico: 67
+Inconclusivo: 619
+Conteúdo Sugestivamente Verídico: 57
+Conteúdo Notoriamente Verídico: 124
 Taxa de Conclusão: 0.38
 
 ---------------   MODELO: FIXO_01_09   -----------------------
-Conteúdo Notoriamente Inverídico: 665
-Conteúdo Sugestivamente Inverídico: 353
-Inconclusivo: 7979
-Conteúdo Sugestivamente Verídico: 367
-Conteúdo Notoriamente Verídico: 632
-Taxa de Conclusão: 0.20
+Conteúdo Notoriamente Inverídico: 76
+Conteúdo Sugestivamente Inverídico: 35
+Inconclusivo: 784
+Conteúdo Sugestivamente Verídico: 49
+Conteúdo Notoriamente Verídico: 53
+Taxa de Conclusão: 0.21
 
 ---------------   MODELO: FIXO_02_08   -----------------------
-Conteúdo Notoriamente Inverídico: 1018
-Conteúdo Sugestivamente Inverídico: 873
-Inconclusivo: 6148
-Conteúdo Sugestivamente Verídico: 958
-Conteúdo Notoriamente Verídico: 999
-Taxa de Conclusão: 0.38
+Conteúdo Notoriamente Inverídico: 111
+Conteúdo Sugestivamente Inverídico: 91
+Inconclusivo: 609
+Conteúdo Sugestivamente Verídico: 84
+Conteúdo Notoriamente Verídico: 102
+Taxa de Conclusão: 0.39
 
 ---------------   MODELO: FIXO_0225_0775   -----------------------
-Conteúdo Notoriamente Inverídico: 1169
-Conteúdo Sugestivamente Inverídico: 996
-Inconclusivo: 5721
-Conteúdo Sugestivamente Verídico: 1041
-Conteúdo Notoriamente Verídico: 1069
-Taxa de Conclusão: 0.43
+Conteúdo Notoriamente Inverídico: 132
+Conteúdo Sugestivamente Inverídico: 101
+Inconclusivo: 557
+Conteúdo Sugestivamente Verídico: 96
+Conteúdo Notoriamente Verídico: 111
+Taxa de Conclusão: 0.44
 
 ---------------   MODELO: FIXO_03_07   -----------------------
-Conteúdo Notoriamente Inverídico: 1473
-Conteúdo Sugestivamente Inverídico: 1369
-Inconclusivo: 4265
-Conteúdo Sugestivamente Verídico: 1416
-Conteúdo Notoriamente Verídico: 1473
-Taxa de Conclusão: 0.57
+Conteúdo Notoriamente Inverídico: 157
+Conteúdo Sugestivamente Inverídico: 134
+Inconclusivo: 418
+Conteúdo Sugestivamente Verídico: 142
+Conteúdo Notoriamente Verídico: 146
+Taxa de Conclusão: 0.58
 
 ---------------   MODELO: FIXO_04_06   -----------------------
-Conteúdo Notoriamente Inverídico: 1891
-Conteúdo Sugestivamente Inverídico: 2040
-Inconclusivo: 2149
-Conteúdo Sugestivamente Verídico: 1959
-Conteúdo Notoriamente Verídico: 1957
-Taxa de Conclusão: 0.79
+Conteúdo Notoriamente Inverídico: 202
+Conteúdo Sugestivamente Inverídico: 187
+Inconclusivo: 222
+Conteúdo Sugestivamente Verídico: 200
+Conteúdo Notoriamente Verídico: 186
+Taxa de Conclusão: 0.78
 
 ---------------   MODELO: PODADO_V1   -----------------------
-Conteúdo Notoriamente Inverídico: 1241
-Conteúdo Sugestivamente Inverídico: 651
-Inconclusivo: 6166
-Conteúdo Sugestivamente Verídico: 738
-Conteúdo Notoriamente Verídico: 1200
-Taxa de Conclusão: 0.38
+Conteúdo Notoriamente Inverídico: 130
+Conteúdo Sugestivamente Inverídico: 68
+Inconclusivo: 613
+Conteúdo Sugestivamente Verídico: 60
+Conteúdo Notoriamente Verídico: 126
+Taxa de Conclusão: 0.39
 --------------------------------------------------------------

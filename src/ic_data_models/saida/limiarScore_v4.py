@@ -89,7 +89,7 @@ def getLimiarScore_v4(coScoreTotal, IC, isNormalizado=False):
 
 if __name__ == "__main__":
     print("LimiarScore: ", getLimiarScore_v4(
-        0.6456, # coScoreTotal
-        0.3, # IC
+        1.0, # coScoreTotal
+        0.8, # IC
         True # isNormalizado  
     ))

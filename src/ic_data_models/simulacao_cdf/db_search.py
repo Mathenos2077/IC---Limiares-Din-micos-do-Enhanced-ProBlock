@@ -51,6 +51,22 @@ def _formatar_avaliacao(conn, avaliacao_numero):
 
     return "\n".join(output)
 
+
+def get_avaliacao(avaliacao_numero, db_path='simulacoes.duckdb'):
+    """
+    Busca e exibe os detalhes de uma avaliação específica pelo seu ID/número.
+
+    :param avaliacao_numero: Número ou ID da avaliação a ser buscada.
+    :param db_path: Caminho para o arquivo do banco de dados DuckDB.
+    :return: String formatada com os detalhes da avaliação.
+    """
+    conn = duckdb.connect(db_path, read_only=True)
+    texto = _formatar_avaliacao(conn, avaliacao_numero)
+    print(texto)
+    conn.close()
+    return texto
+
+
 def buscar_por_conclusao_convergente(modelos, db_path='simulacoes.duckdb'):
     """
     Busca e exibe avaliações onde um conjunto de modelos teve a mesma conclusão.
@@ -397,9 +413,6 @@ if __name__ == '__main__':
     Este bloco é executado quando o script é chamado diretamente.
     Descomente as funções que deseja executar para testar as buscas no banco de dados.
     """
-    # Exemplo de uso da nova função de histograma:
-    modelos_para_comparar = ["fixo_01_09", "fixo_02_08", "fixo_0225_0775", "fixo_03_07", "fixo_04_06", "podado_v1", "nao_podado_v3"]
-    # Para ver o gráfico com as conclusões agrupadas, mude para True
-    gerar_histograma_comparativo(modelos_para_comparar, agrupar_conclusoes=True)
+    get_avaliacao(1002)
     
  
