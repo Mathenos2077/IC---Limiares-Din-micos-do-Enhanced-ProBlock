@@ -10,7 +10,7 @@ import utils
 from utils import FactChecker
 
 # Configurações do Modelo a ser adicionado
-NOVO_MODELO_NOME = "fixo_05_05"  # Nome do modelo a ser adicionado (ex: "nao_podado_v3", "podado_v1", "fixo_05_05", etc.)
+NOVO_MODELO_NOME = "v4_IC_057_143"  # Nome do modelo a ser adicionado (ex: "nao_podado_v3", "podado_v1", "fixo_05_05", etc.)
 NOVO_MODELO_TIPO = "fixo" if "fixo" in NOVO_MODELO_NOME else "dinamico"
 NOVO_MODELO_DESCRICAO = f"Modelo {NOVO_MODELO_NOME} inserido via simulacao_extendida_database_addModelo"
 
@@ -109,7 +109,7 @@ try:
 
         if conclusao_modelo:
             relatorio_conclusoes[conclusao_modelo] += 1
-            db.inserir_relacionamento_interpreta(conn, avaliacao_numero, NOVO_MODELO_NOME, conclusao_modelo)
+            db.inserir_relacionamento_interpreta(conn, avaliacao_numero, NOVO_MODELO_NOME, conclusao_modelo, limiarScore)
 
     conn.commit()
     print(f"\n[+] Sucesso! {total_avaliacoes} avaliações foram processadas e salvas na tabela INTERPRETA para o modelo '{NOVO_MODELO_NOME}'.")

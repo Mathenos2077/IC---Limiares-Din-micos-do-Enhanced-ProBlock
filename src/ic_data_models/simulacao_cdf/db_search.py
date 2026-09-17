@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import textwrap
 
 
-def _formatar_avaliacao(conn, avaliacao_numero):
+def _formatar_avaliacao(conn, avaliacao_numero, modelos=None):
     """
     Função auxiliar para buscar e formatar os detalhes de uma única avaliação.
     """
@@ -28,7 +28,17 @@ def _formatar_avaliacao(conn, avaliacao_numero):
     avaliadores = conn.execute(avaliadores_query, (avaliacao_numero,)).fetchall()
 
     # Buscar conclusões dos modelos
-    conclusoes = conn.execute("SELECT modelo_nome, conclusao FROM INTERPRETA WHERE avaliacao_numero = ? ORDER BY modelo_nome", (avaliacao_numero,)).fetchall()
+    if modelos:
+        placeholders = ', '.join(['?'] * len(modelos))
+        query = f"SELECT modelo_nome, conclusao, limiarScore FROM INTERPRETA WHERE avaliacao_numero = ? AND modelo_nome IN ({placeholders})"
+        params = [avaliacao_numero] + modelos
+        conclusoes_raw = conn.execute(query, params).fetchall()
+        
+        # Organiza as conclusões na mesma ordem da lista 'modelos' fornecida
+        conclusoes_dict = {row[0]: (row[1], row[2]) for row in conclusoes_raw}
+        conclusoes = [(m, conclusoes_dict[m][0], conclusoes_dict[m][1]) for m in modelos if m in conclusoes_dict]
+    else:
+        conclusoes = conn.execute("SELECT modelo_nome, conclusao, limiarScore FROM INTERPRETA WHERE avaliacao_numero = ? ORDER BY modelo_nome", (avaliacao_numero,)).fetchall()
 
     # Montar o texto de saída
     output = []
@@ -46,22 +56,23 @@ def _formatar_avaliacao(conn, avaliacao_numero):
     output.append(f"  -> IC: {ic}")
     output.append(f"  -> coScoreTotal: {co_score_total}")
 
-    for modelo, conclusao in conclusoes:
-        output.append(f"  -> Conclusão {modelo}: {conclusao}")
+    for modelo, conclusao, limiar_score in conclusoes:
+        output.append(f"  -> Conclusão {modelo}: {conclusao} (Limiar: {limiar_score})")
 
     return "\n".join(output)
 
 
-def get_avaliacao(avaliacao_numero, db_path='simulacoes.duckdb'):
+def get_avaliacao(avaliacao_numero, modelos=None, db_path='simulacoes.duckdb'):
     """
     Busca e exibe os detalhes de uma avaliação específica pelo seu ID/número.
 
     :param avaliacao_numero: Número ou ID da avaliação a ser buscada.
+    :param modelos: Lista de nomes de modelos a serem exibidos.
     :param db_path: Caminho para o arquivo do banco de dados DuckDB.
     :return: String formatada com os detalhes da avaliação.
     """
     conn = duckdb.connect(db_path, read_only=True)
-    texto = _formatar_avaliacao(conn, avaliacao_numero)
+    texto = _formatar_avaliacao(conn, avaliacao_numero, modelos=modelos)
     print(texto)
     conn.close()
     return texto
@@ -95,7 +106,7 @@ def buscar_por_conclusao_convergente(modelos, db_path='simulacoes.duckdb'):
     
     print(f"--- BUSCA POR CONVERGÊNCIA NOS MODELOS: {', '.join(modelos)} ---")
     for (numero,) in numeros_filtrados:
-        print(_formatar_avaliacao(conn, numero))
+        print(_formatar_avaliacao(conn, numero, modelos=modelos))
 
     print("\n" + "="*40)
     print("     RELATÓRIO ESTATÍSTICO DA BUSCA")
@@ -134,7 +145,7 @@ def buscar_por_conclusao_divergente(modelos, db_path='simulacoes.duckdb'):
 
     print(f"--- BUSCA POR DIVERGÊNCIA NOS MODELOS: {', '.join(modelos)} ---")
     for (numero,) in numeros_filtrados:
-        print(_formatar_avaliacao(conn, numero))
+        print(_formatar_avaliacao(conn, numero, modelos=modelos))
 
     print("\n" + "="*40)
     print("     RELATÓRIO ESTATÍSTICO DA BUSCA")
@@ -196,7 +207,7 @@ def buscar_por_divergencia_unanime_entre_grupos(grupo_modelos_1, grupo_modelos_2
     print("-" * 20)
 
     for (numero,) in numeros_filtrados:
-        print(_formatar_avaliacao(conn, numero))
+        print(_formatar_avaliacao(conn, numero, modelos=grupo_modelos_1 + grupo_modelos_2))
 
     print("\n" + "="*40)
     print("     RELATÓRIO ESTATÍSTICO DA BUSCA")
@@ -408,11 +419,179 @@ def gerar_histograma_comparativo(modelos, db_path='simulacoes.duckdb', agrupar_c
     plt.tight_layout()
     plt.show()
 
+def gerar_grafico_limiar_score(avaliacao_numero, modelos, db_path='simulacoes.duckdb'):
+    """
+    Busca os limiares (limiarScore) de uma avaliação específica para uma lista de modelos
+    e constrói um gráfico comparativo, preservando a ordem da lista de modelos.
+
+    :param avaliacao_numero: Número da avaliação.
+    :param modelos: Lista de nomes de modelos.
+    :param db_path: Caminho para o arquivo do banco de dados DuckDB.
+    """
+    if not modelos:
+        print("Erro: Forneça uma lista com pelo menos um modelo.")
+        return
+
+    conn = duckdb.connect(db_path, read_only=True)
+    
+    placeholders = ', '.join(['?'] * len(modelos))
+    query = f"""
+    SELECT modelo_nome, limiarScore
+    FROM INTERPRETA
+    WHERE avaliacao_numero = ? AND modelo_nome IN ({placeholders})
+    """
+    
+    params = [avaliacao_numero] + modelos
+    resultados = conn.execute(query, params).fetchall()
+    conn.close()
+
+    if not resultados:
+        print(f"Não foram encontrados dados para a avaliação {avaliacao_numero} com os modelos especificados.")
+        return
+
+    # Organizar resultados em um dicionário para fácil acesso
+    dados_dict = {row[0]: row[1] for row in resultados}
+
+    # Filtrar modelos que não retornaram resultados e manter a ordem solicitada
+    modelos_encontrados = []
+    limiares = []
+    
+    for modelo in modelos:
+        if modelo in dados_dict:
+            modelos_encontrados.append(modelo)
+            limiares.append(dados_dict[modelo])
+        else:
+            print(f"Aviso: Modelo '{modelo}' não encontrado na avaliação {avaliacao_numero}.")
+
+    if not modelos_encontrados:
+        print("Nenhum dos modelos solicitados foi encontrado para esta avaliação.")
+        return
+
+    # Plotagem do gráfico
+    plt.figure(figsize=(12, 6))
+    
+    # Criar um gráfico de linha com marcadores para evidenciar a tendência do limiar
+    plt.plot(modelos_encontrados, limiares, marker='o', linestyle='-', color='b', markersize=8, linewidth=2)
+    
+    plt.title(f'LimiarScore por Modelo - Avaliação {avaliacao_numero}', fontsize=16)
+    plt.xlabel('Modelo', fontsize=12)
+    plt.ylabel('LimiarScore', fontsize=12)
+    
+    # Rotacionar os rótulos do eixo X para melhor visualização
+    plt.xticks(rotation=45, ha='right')
+    
+    # Adicionar os valores acima de cada ponto
+    for i, txt in enumerate(limiares):
+        plt.annotate(f'{txt:.4f}', (i, limiares[i]), textcoords="offset points", xytext=(0,10), ha='center', fontsize=9)
+
+    plt.grid(axis='y', linestyle='--', alpha=0.7)
+    plt.tight_layout()
+    plt.show()
+
+def gerar_matriz_taxa_divergencia(modelos, db_path='simulacoes.duckdb', visual=True):
+    """
+    Gera e exibe uma matriz contendo a taxa de divergência entre cada dupla
+    de modelos especificados. A taxa é calculada como o número de avaliações
+    divergentes dividido pelo total de avaliações em comum.
+
+    :param modelos: Lista de nomes de modelos a serem comparados.
+    :param db_path: Caminho para o arquivo do banco de dados DuckDB.
+    :param visual: Se True, exibe um mapa de calor gráfico da matriz. Requer seaborn e matplotlib.
+    """
+    if not modelos or len(modelos) < 2:
+        print("Erro: Forneça uma lista com pelo menos dois modelos.")
+        return
+
+    conn = duckdb.connect(db_path, read_only=True)
+    
+    placeholders = ', '.join(['?'] * len(modelos))
+    query = f"""
+    SELECT avaliacao_numero, modelo_nome, conclusao
+    FROM INTERPRETA
+    WHERE modelo_nome IN ({placeholders})
+    """
+    
+    df = conn.execute(query, modelos).fetchdf()
+    conn.close()
+
+    if df.empty:
+        print(f"Não foram encontradas avaliações para os modelos especificados.")
+        return
+
+    # Transforma os dados para que cada modelo seja uma coluna
+    df_pivot = df.pivot(index='avaliacao_numero', columns='modelo_nome', values='conclusao')
+
+    # Mantém apenas as colunas dos modelos que de fato retornaram do banco
+    modelos_encontrados = [m for m in modelos if m in df_pivot.columns]
+    
+    if len(modelos_encontrados) < 2:
+        print("Erro: Não há dados suficientes para comparar pelo menos dois modelos.")
+        return
+
+    # Inicializa a matriz
+    matriz_divergencia = pd.DataFrame(index=modelos_encontrados, columns=modelos_encontrados, dtype=float)
+
+    for i in range(len(modelos_encontrados)):
+        for j in range(len(modelos_encontrados)):
+            modelo_i = modelos_encontrados[i]
+            modelo_j = modelos_encontrados[j]
+            
+            if modelo_i == modelo_j:
+                matriz_divergencia.loc[modelo_i, modelo_j] = 0.0
+            else:
+                mask = df_pivot[modelo_i].notna() & df_pivot[modelo_j].notna()
+                comum = df_pivot[mask]
+                
+                if len(comum) == 0:
+                    matriz_divergencia.loc[modelo_i, modelo_j] = float('nan')
+                else:
+                    divergencias = (comum[modelo_i] != comum[modelo_j]).sum()
+                    taxa = divergencias / len(comum)
+                    matriz_divergencia.loc[modelo_i, modelo_j] = taxa
+
+    if not visual:
+        print(f"\n--- MATRIZ DE TAXA DE DIVERGÊNCIA ---")
+        print(matriz_divergencia.to_string(float_format=lambda x: f"{x:.2%}" if pd.notna(x) else "N/A"))
+        print("\n" + "-"*80)
+
+    if visual:
+        plt.figure(figsize=(12, 10))
+        heatmap = sns.heatmap(matriz_divergencia, annot=True, fmt=".2%", cmap="Reds", cbar=True, linewidths=.5, vmin=0, vmax=1)
+        
+        plt.title('Taxa de Divergência entre Modelos', fontsize=16)
+        plt.ylabel('Modelo', fontsize=12)
+        plt.xlabel('Modelo', fontsize=12)
+        plt.xticks(rotation=45, ha='right')
+        plt.yticks(rotation=0)
+        plt.tight_layout()
+        plt.show()
+
+def listar_modelos(db_path='simulacoes.duckdb'):
+    """
+    Lista todos os modelos distintos existentes no banco de dados.
+
+    :param db_path: Caminho para o arquivo do banco de dados DuckDB.
+    :return: Lista contendo os nomes dos modelos.
+    """
+    conn = duckdb.connect(db_path, read_only=True)
+    query = "SELECT DISTINCT modelo_nome FROM INTERPRETA ORDER BY modelo_nome"
+    resultados = conn.execute(query).fetchall()
+    conn.close()
+
+    modelos = [row[0] for row in resultados]
+    print(f"--- MODELOS ENCONTRADOS ({len(modelos)}) ---")
+    for modelo in modelos:
+        print(f"- {modelo}")
+    
+    return modelos
+
 if __name__ == '__main__':
     """
     Este bloco é executado quando o script é chamado diretamente.
     Descomente as funções que deseja executar para testar as buscas no banco de dados.
     """
-    get_avaliacao(1002)
+    #modelos = ["podado_v1","nao_podado_v3", "v4_IC_095_105", "v4_IC_090_110", "v4_IC_085_115", "v4_IC_080_120", "v4_IC_075_125", "v4_IC_070_130", "v4_IC_066_133", "v4_IC_065_135", "v4_IC_060_140", "v4_IC_057_143", "v4_IC_055_145", "v4_IC_050_150"]
+    modelos = ["podado_v1", "nao_podado_v3", "v4_IC_080_120", "v4_IC_066_133", "v4_IC_057_143", "v4_IC_050_150"]
+   
+    buscar_por_conclusao_divergente(modelos)
     
- 

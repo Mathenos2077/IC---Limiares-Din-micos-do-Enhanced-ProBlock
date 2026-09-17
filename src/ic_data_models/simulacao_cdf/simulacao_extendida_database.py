@@ -131,13 +131,9 @@ for i in range(M):
     subjectScoreTotal = round(utils.getSubjectScore(subjectScoreArray), 4)
 
     conclusoes_modelos = {}
-    limiar_score_base = 0.0
 
     for modelo in MODELOS_TOTAIS:
         limiarScore = round(utils.getLimiarScore(factCheckers, model=modelo), 4)
-        
-        if modelo == MODELO_BASE:
-            limiar_score_base = limiarScore
 
         if SALVAR_NO_DB:
             if DETALHAR_RODADAS or APENAS_DIVERGENTES:
@@ -160,7 +156,7 @@ for i in range(M):
         elif limUpEx < cdf <= 1:
             conclusao_modelo = "Conteúdo Notoriamente Verídico"
             
-        conclusoes_modelos[modelo] = conclusao_modelo
+        conclusoes_modelos[modelo] = (conclusao_modelo, limiarScore)
 
         if conclusao_modelo:
             relatorios_modelos[modelo][conclusao_modelo] += 1
@@ -169,19 +165,19 @@ for i in range(M):
     # para decidir se a rodada deve ser exibida quando APENAS_DIVERGENTES=True.
     houve_divergencia = False
     for modelo in MODELOS_PARA_TESTAR:
-        if modelo != MODELO_BASE and conclusoes_modelos[modelo] != conclusoes_modelos[MODELO_BASE]:
+        if modelo != MODELO_BASE and conclusoes_modelos[modelo][0] != conclusoes_modelos[MODELO_BASE][0]:
             houve_divergencia = True
             break
             
     for modelo in MODELOS_TOTAIS:
-        log(f"  -> Conclusão {modelo}: {conclusoes_modelos[modelo]}")
+        log(f"  -> Conclusão {modelo}: {conclusoes_modelos[modelo][0]} (Limiar: {conclusoes_modelos[modelo][1]})")
 
     texto_rodada = "\n".join(log_buffer) + "\n"
     
     if SALVAR_NO_DB:
         try:
             # Inserir a avaliação principal
-            db.inserir_avaliacao(conn, numero_avaliacao_atual, cdf, limiar_score_base, IC, coScoreTotal, subjectScoreTotal)
+            db.inserir_avaliacao(conn, numero_avaliacao_atual, cdf, IC, coScoreTotal, subjectScoreTotal)
 
             # Inserir relacionamentos FAZ
             for idx, checker_id in enumerate(fact_checker_ids):
@@ -189,8 +185,8 @@ for i in range(M):
                 db.inserir_relacionamento_faz(conn, checker_id, numero_avaliacao_atual, checker.confidenceScore, checker.newsVote, checker.getWeightedVote())
 
             # Inserir relacionamentos INTERPRETA
-            for modelo, conclusao in conclusoes_modelos.items():
-                db.inserir_relacionamento_interpreta(conn, numero_avaliacao_atual, modelo, conclusao)
+            for modelo, (conclusao, limiar) in conclusoes_modelos.items():
+                db.inserir_relacionamento_interpreta(conn, numero_avaliacao_atual, modelo, conclusao, limiar)
             
             conn.commit() # Confirma a transação da rodada
         except Exception as e:

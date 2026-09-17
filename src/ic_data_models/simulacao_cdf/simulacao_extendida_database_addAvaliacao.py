@@ -41,27 +41,7 @@ AVALIADORES_MANUAIS = [
         "orgScore": 5,
         "freqScore": 2.0,
         "accScore": 8.0,
-        "subjectScore": 1.0,
-        "newsVote": 2,
-        "confidenceScore": 1.1,
-        "coScoreMedio": 1.0
-    },
-       {
-        "yrsScore": 3,
-        "orgScore": 5,
-        "freqScore": 2.0,
-        "accScore": 8.0,
-        "subjectScore": 1.0,
-        "newsVote": 2,
-        "confidenceScore": 1.1,
-        "coScoreMedio": 1.0
-    },
-       {
-        "yrsScore": 3,
-        "orgScore": 5,
-        "freqScore": 2.0,
-        "accScore": 8.0,
-        "subjectScore": 1.0,
+        "subjectScore": 5.0,
         "newsVote": 2,
         "confidenceScore": 1.1,
         "coScoreMedio": 1.0
@@ -71,27 +51,47 @@ AVALIADORES_MANUAIS = [
         "orgScore": 5,
         "freqScore": 2.0,
         "accScore": 8.0,
-        "subjectScore": 2.0,
-        "newsVote": -2,
+        "subjectScore": 5.0,
+        "newsVote": 2,
         "confidenceScore": 1.1,
         "coScoreMedio": 1.0
-    }, 
-    {
+    },
+       {
         "yrsScore": 3,
         "orgScore": 5,
         "freqScore": 2.0,
         "accScore": 8.0,
-        "subjectScore": 2.0,
+        "subjectScore": 1.0,
         "newsVote": -2,
         "confidenceScore": 1.1,
         "coScoreMedio": 1.0
     },
-    {
+       {
         "yrsScore": 3,
         "orgScore": 5,
         "freqScore": 2.0,
         "accScore": 8.0,
-        "subjectScore": 2.0,
+        "subjectScore": 1.0,
+        "newsVote": -2,
+        "confidenceScore": 1.1,
+        "coScoreMedio": 1.0
+    },
+       {
+        "yrsScore": 3,
+        "orgScore": 5,
+        "freqScore": 2.0,
+        "accScore": 8.0,
+        "subjectScore": 1.0,
+        "newsVote": -2,
+        "confidenceScore": 1.1,
+        "coScoreMedio": 1.0
+    },
+   {
+        "yrsScore": 3,
+        "orgScore": 5,
+        "freqScore": 2.0,
+        "accScore": 8.0,
+        "subjectScore": 1.0,
         "newsVote": -2,
         "confidenceScore": 1.1,
         "coScoreMedio": 1.0
@@ -274,10 +274,8 @@ try:
     log_lines.append(f"  -> coScoreTotal: {coScoreTotal}")
     log_lines.append(f"  -> subjectScoreTotal: {subjectScoreTotal}")
 
-    limiar_score_base = round(utils.getLimiarScore(factCheckers, model=MODELO_BASE), 4)
-
     # Inserir avaliação na tabela AVALIACAO
-    db.inserir_avaliacao(conn, numero_avaliacao_atual, cdf, limiar_score_base, IC, coScoreTotal, subjectScoreTotal)
+    db.inserir_avaliacao(conn, numero_avaliacao_atual, cdf, IC, coScoreTotal, subjectScoreTotal)
 
     # Inserir relacionamentos FAZ
     for idx, fc_id in enumerate(fact_checker_ids):
@@ -306,8 +304,8 @@ try:
         elif limUpEx < cdf <= 1:
             conclusao_modelo = "Conteúdo Notoriamente Verídico"
 
-        db.inserir_relacionamento_interpreta(conn, numero_avaliacao_atual, modelo_nome, conclusao_modelo)
-        log_lines.append(f"  -> Conclusão ({modelo_nome}): {conclusao_modelo}")
+        db.inserir_relacionamento_interpreta(conn, numero_avaliacao_atual, modelo_nome, conclusao_modelo, limiarScore)
+        log_lines.append(f"  -> Conclusão ({modelo_nome}): {conclusao_modelo} (Limiar: {limiarScore})")
 
     conn.commit()
 

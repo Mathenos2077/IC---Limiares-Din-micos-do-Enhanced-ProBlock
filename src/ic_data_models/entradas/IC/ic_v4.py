@@ -54,21 +54,18 @@ def getIC_v4(newsVoteArray, subjectScoreArray, min=0.5, max=1.5, square=True):
     return abs(ic/2)
 
 ### Nova Função de Teste e Gráfico
-def plot_ic_sensibilidade(newsVoteArray, subjectScoreArray, range=[0, 1], passos=20, square=True):
+def plot_ic_sensibilidade(newsVoteArray, subjectScoreArray, pares_limites=None, square=True):
     """
-    Testa o algoritmo variando os limites 'min' e 'max' de forma simétrica.
-    Parte do modelo antigo (1 e 1) até limites extremos (0 e 2).
+    Testa o algoritmo para os limites 'min' e 'max' definidos na lista de pares.
     """
-    # Cria os deltas variando de 0.0 até 1.0
-    deltas = np.linspace(range[0], range[1], passos + 1)
-    
+    if pares_limites is None:
+        pares_limites = [(1.0, 1.0), (0.8, 1.2), (0.66, 1.33), (0.57, 1.43), (0.5, 1.5)]
+        
     eixo_x_labels = [] 
     valores_ic = []
+    indices = range(len(pares_limites))
     
-    for delta in deltas:
-        min_val = 1.0 - delta
-        max_val = 1.0 + delta
-        
+    for min_val, max_val in pares_limites:
         # Calcula o IC para o cenário atual
         ic = getIC_v4(newsVoteArray, subjectScoreArray, min=min_val, max=max_val, square=square)
         valores_ic.append(ic)
@@ -78,11 +75,11 @@ def plot_ic_sensibilidade(newsVoteArray, subjectScoreArray, range=[0, 1], passos
 
     # Plotagem
     plt.figure(figsize=(9, 6))
-    plt.plot(deltas, valores_ic, marker='o', linestyle='-', color='#1f77b4', linewidth=2, markersize=6)
-    plt.plot(deltas[0], valores_ic[0], marker='o', color='red', markersize=10, label='Modelo Antigo (1.0 | 1.0)')
-    plt.xticks(deltas, eixo_x_labels, rotation=45, ha='right')
+    plt.plot(indices, valores_ic, marker='o', linestyle='-', color='#1f77b4', linewidth=2, markersize=6)
+    plt.plot(indices[0], valores_ic[0], marker='o', color='red', markersize=10, label='Modelo Antigo (1.0 | 1.0)')
+    plt.xticks(indices, eixo_x_labels, rotation=45, ha='right')
     plt.title('Sensibilidade do IC em Relação aos Limites [Min | Max]', fontsize=14, pad=15)
-    plt.xlabel('Variação Simétrica dos Limites [Mínimo | Máximo]', fontsize=12)
+    plt.xlabel('Pares de Limites [Mínimo | Máximo]', fontsize=12)
     plt.ylabel('Resultado do IC Calculado', fontsize=12)
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.legend()
@@ -92,8 +89,17 @@ def plot_ic_sensibilidade(newsVoteArray, subjectScoreArray, range=[0, 1], passos
 
 if __name__ == "__main__":
     # Cenário de teste
-    cenario_votos = np.array([2, 2, 2, -2, -2, -2])
-    cenario_scores = np.array([1, 1, 1, 2, 2, 2])
+    cenario_votos = np.array([2, 2, -2, -2, -2, -2])
+    cenario_scores = np.array([5, 5, 1, 1, 1, 1])
+    
+    # Pares de limites (min, max) definidos
+    pares_a_b = [
+        (1.0, 1.0),
+        (0.8, 1.2),
+        (0.66, 1.33),
+        (0.57, 1.43),
+        (0.5, 1.5)
+    ]
     
     print("Gerando gráfico de sensibilidade...")
-    plot_ic_sensibilidade(cenario_votos, cenario_scores, range=[0, 0.5], passos=10, square=True)
+    plot_ic_sensibilidade(cenario_votos, cenario_scores, pares_limites=pares_a_b, square=True)

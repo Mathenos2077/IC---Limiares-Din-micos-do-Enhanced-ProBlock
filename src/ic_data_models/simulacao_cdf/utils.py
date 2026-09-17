@@ -191,11 +191,17 @@ def getLimiarScore(factCheckers, model="podado_v1"):
     elif model == "v4_IC_070_130":
         IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.70, 1.30, True)
         return limiarScoreV4.getLimiarScore_v4(coScoreTotal, IC, True)
+    elif model == "v4_IC_066_133":
+        IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.66, 1.33, True)
+        return limiarScoreV4.getLimiarScore_v4(coScoreTotal, IC, True)
     elif model == "v4_IC_065_135":
         IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.65, 1.35, True)
         return limiarScoreV4.getLimiarScore_v4(coScoreTotal, IC, True)
     elif model == "v4_IC_060_140":
         IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.60, 1.40, True)
+        return limiarScoreV4.getLimiarScore_v4(coScoreTotal, IC, True)
+    elif model == "v4_IC_057_143":
+        IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.57, 1.43, True)
         return limiarScoreV4.getLimiarScore_v4(coScoreTotal, IC, True)
     elif model == "v4_IC_055_145":
         IC = icV4.getIC_v4(newsVoteArray, subjectScoreArray, 0.55, 1.45, True)

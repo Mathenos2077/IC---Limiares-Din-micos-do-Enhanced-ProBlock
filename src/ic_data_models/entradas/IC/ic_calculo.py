@@ -44,10 +44,12 @@ def getIC(quantidadeAval, square=True):
 
 
 if __name__ == "__main__":
-    print(abs(getIC([
-        0,     ###  (-2) Quantidade de avaliações "conteúdo notoriamente inverídico"
+    ic = (abs(getIC([
+        1,     ###  (-2) Quantidade de avaliações "conteúdo notoriamente inverídico"
         0,      ### (-1) Quantidade de avaliações "conteúdo sugestivamente inverídico"
-        0,      ### (0) Quantidade de avaliações "inconclusiva"
-        0,      ### (1) Quantidade de avaliações "conteúdo sugestivamente verídico"
-        0       ### (2) Quantidade de avaliações "conteúdo notoriamente verídico"
+        1,      ### (0) Quantidade de avaliações "inconclusiva"
+        1,      ### (1) Quantidade de avaliações "conteúdo sugestivamente verídico"
+        2       ### (2) Quantidade de avaliações "conteúdo notoriamente verídico"
         ], True)))
+
+    print("IC: ", ic)

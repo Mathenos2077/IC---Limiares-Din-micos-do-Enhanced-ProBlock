@@ -27,7 +27,6 @@ conn.execute("""
     CREATE TABLE IF NOT EXISTS AVALIACAO (
         numero INTEGER PRIMARY KEY,
         CDF DOUBLE NOT NULL,
-        limiarScore DOUBLE NOT NULL,
         IC DOUBLE NOT NULL,
         coScoreTotal DOUBLE NOT NULL,
         subjectScoreTotal DOUBLE NOT NULL
@@ -63,6 +62,7 @@ conn.execute("""
         avaliacao_numero INTEGER,
         modelo_nome VARCHAR,
         conclusao VARCHAR NOT NULL,
+        limiarScore DOUBLE NOT NULL,
         PRIMARY KEY (avaliacao_numero, modelo_nome),
         FOREIGN KEY (avaliacao_numero) REFERENCES AVALIACAO(numero),
         FOREIGN KEY (modelo_nome) REFERENCES MODELO(nome)
