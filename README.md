@@ -1,38 +1,71 @@
-# Modelo de Limiares Dinâmicos do Enhanced ProBlock
+# Modelo de Limiares Dinâmicos - Enhanced ProBlock
 
-Este repositório contém o modelo matemático e de inferência fuzzy para a geração de Limiares Dinâmicos de moderação em sistemas de detecção de notícias falsas (como o Enhanced ProBlock).
+Este repositório contém o modelo matemático e de inferência fuzzy para a geração de Limiares Dinâmicos de moderação em sistemas de detecção de Fake News (como o Enhanced ProBlock).
 
-A arquitetura principal define que para cada notícia avaliada, o sistema ajusta as faixas de limiares que ditam se a probabilidade daquela notícia (CDF) é considerada verdadeira, falsa ou inconclusiva, baseado no consenso dos avaliadores.
+## Estratégia de Branches
+- **`main`**: Destinada a quem quiser usar e conhecer o modelo. Contém a versão estável e pronta para uso.
+- **`develop`**: Destinada a desenvolvedores e pesquisadores que queiram se aprofundar, modificar e expandir a arquitetura do modelo.
 
-## Estrutura de Arquivos e Componentes
+---
 
-- **IC (Índice de Convicção):** Um número que reflete o quanto os avaliadores estão certos em relação à veracidade da notícia.
-- **coScore (Collaboration Score):** Avalia se o julgamento do avaliador está coerente com os demais.
-  - O sistema possui dois meios de cálculo de coScore: um baseado em lógica *Fuzzy* original e um cálculo de *Mapeamento Direto* otimizado (`calculo_coScore_direto.py`), que normaliza variáveis entre 0 e 1, baseando-se em `assertLevel` de 1 a 5 e `confidence` de 0.9, 1.0 e 1.1.
-- **limiarScore:** Saída do segundo sistema fuzzy, que utiliza o `IC` e o `CoScoreTotal` (média global) para determinar o tamanho numérico da zona "Inconclusiva".
-- **Limiares Dinâmicos:** As quatro partições (`limDownEx`, `limDown`, `limUp`, `limUpEx`) na CDF de 0 a 1, baseadas no valor de `limiarScore`.
+## Visão Geral do Modelo e CDF
 
-## Requisitos e Instalação
+O objetivo principal deste modelo é definir dinamicamente os limites de classificação para uma variável chamada **CDF**, que dita a probabilidade de uma notícia ser verdadeira (variando de 0 a 1). 
 
-Para executar este sistema, instale as dependências:
+A depender dessa probabilidade, a notícia pode ser classificada em 5 níveis de gradação:
+1. **Conteúdo notoriamente inverídico**
+2. **Conteúdo sugestivamente inverídico**
+3. **Inconclusivo**
+4. **Conteúdo sugestivamente verídico**
+5. **Conteúdo notoriamente verídico**
 
+Os **Limiares Dinâmicos** servem justamente para decidir onde cada um desses 5 intervalos vai estar no espectro de 0 a 1, adaptando-se a cada caso com base no consenso da rede de avaliadores.
+
+---
+
+## Arquitetura e Variáveis Principais
+
+O cálculo dos limiares funciona em cascata e é dividido em duas variáveis de entrada principais que alimentam o sistema fuzzy central:
+
+### 1. IC (Índice de Convicção)
+- **Arquivo:** `src/ic_data_models/entradas/IC/ic_v4.py`
+- É uma medida que indica o quão convictos os avaliadores estão sobre a veracidade da notícia. 
+- Utiliza como base os parâmetros `newsVote` e `subjectScore`.
+
+### 2. CoScoreTotal
+- Para entender o `CoScoreTotal`, é necessário compreender a hierarquia do cálculo:
+  - **coScore:** Calculado individualmente para cada avaliação de um checador. Utiliza as variáveis `assertLevel` (escala inteira normalizada) e `confidenceScore` (0.9, 1.0, ou 1.1). Ele pode ser gerado via inferência fuzzy (`calculo_coScore.py`) ou por meio de um mapeamento direto otimizado (`calculo_coScore_direto.py`), que simplifica e normaliza os valores diretamente entre 0 e 1.
+  - **coScoreMedio:** Diferente do coScore que é por avaliação, o `coScoreMedio` é individual para cada fact-checker, sendo a média de todos os coScores que ele obteve em suas avaliações.
+  - **CoScoreTotal:** É a variável final de entrada para o sistema principal. Representa a média do array contendo os `coScoreMedio` de todos os avaliadores.
+
+### 3. LimiarScore
+- **Arquivo:** `src/ic_data_models/saida/limiarScore_v4.py`
+- Este é o **Sistema Fuzzy Principal**. Ele recebe as duas variáveis acima (`IC` e `CoScoreTotal`) e retorna um valor único chamado `limiarScore`.
+- O valor do `limiarScore` representa matematicamente o **tamanho do intervalo de inconclusão** na CDF.
+
+### 4. Limiares Dinâmicos (As Partições)
+- **Arquivo:** `src/ic_data_models/saida/getLimiarDinamico.py`
+- Com o `limiarScore` em mãos, esta função calcula os limites exatos que separam os 5 intervalos na CDF (`limDownEx`, `limDown`, `limUp`, `limUpEx`), seguindo a regra matemática:
+  - `limDown = 0.5 - (limiarScore / 2)`
+  - `limUp = 0.5 + (limiarScore / 2)`
+  - Já os limites extremos (`limDownEx` e `limUpEx`) dividem exatamente ao meio o espaço restante nos extremos da distribuição.
+
+---
+
+## Como Utilizar (`main.py`)
+
+O arquivo `src/ic_data_models/main.py` atua como o ponto de entrada. O usuário final deve rodar esse script enviando um Payload JSON contendo as métricas de seus avaliadores.
+
+> **Atenção:** Os cálculos prévios para obter o `coScoreMedio` individual de cada avaliador NÃO são tratados na `main`. O usuário deve tratar deles antes e enviar o valor já pronto no JSON.
+
+### Requisitos
 ```bash
 pip install numpy scikit-fuzzy matplotlib
 ```
 
-## Como executar o modelo (Interface Principal)
+### Exemplo de Payload JSON (Entrada)
 
-O arquivo `src/ic_data_models/main.py` atua como o ponto de entrada. Ele recebe uma lista de avaliadores em formato JSON.
-
-Para rodar o exemplo de teste do pipeline principal, execute na raiz do projeto:
-
-```bash
-python src/ic_data_models/main.py
-```
-
-### Exemplo de Entrada e Saída (JSON)
-
-A estrutura esperada pela função `pipeline_principal` é um Objeto JSON contendo a lista de `checadores` e campos extras opcionais como a probabilidade atual da notícia (`cdf`), e configurações paramétricas do IC (`IC_N` e `IC_Square`):
+A estrutura esperada é um Objeto JSON contendo a lista de `checadores` (com `newsVote`, `subjectScore` e `coScoreMedio`) e campos extras opcionais como a probabilidade atual da notícia (`cdf`), e configurações paramétricas do IC (`IC_N` e `IC_Square`):
 
 ```json
 {
@@ -46,9 +79,9 @@ A estrutura esperada pela função `pipeline_principal` é um Objeto JSON conten
 }
 ```
 
-Caso o campo `"cdf"` seja enviado no payload, o script fará as checagens com as partições dinâmicas geradas a partir do `limiarScore` e incluirá na resposta o campo `"conclusao"` avaliando onde esse CDF caiu, devolvendo um número numa escala de 5 níveis (`-2, -1, 0, 1, 2`). 
+### Retorno Esperado (Saída)
 
-A saída retornada pela função `pipeline_principal` será uma string JSON formatada como o exemplo abaixo:
+Caso o campo opcional `"cdf"` seja enviado no payload, o script fará as checagens com as partições geradas e incluirá o campo `"conclusao"`, retornando em qual categoria a notícia caiu (`-2` a `2`).
 
 ```json
 {
@@ -59,35 +92,24 @@ A saída retornada pela função `pipeline_principal` será uma string JSON form
     "conclusao": 2
 }
 ```
-> *Nota: a interface possui retrocompatibilidade. Se você enviar apenas a lista crua de checadores (sem estar num dicionário), o código continuará executando e calculando os limiares normalmente, apenas ignorará o cálculo da "conclusão".*
+*Nota: a interface possui retrocompatibilidade. Se você enviar apenas a lista crua de checadores (Array direto), o código continuará calculando os limiares normalmente, apenas ignorará o cálculo da "conclusão".*
+
+---
 
 ## Base de Regras Fuzzy (Transparência do Modelo)
 
-O modelo possui duas inferências lógicas baseadas em pertinência Gaussiana.
+### 1. Sistema Fuzzy de CoScore (`calculo_coScore.py`)
+Mapeia o Nível de Acerto (`assertLevel`, 5 níveis) e Nível de Confiança (`confidenceScore`, 3 níveis) para o Nível de Coerência (`coEscore`, de 0.00 a 1.00). *A versão otimizada `calculo_coScore_direto.py` abstrai essa inferência pesada num mapeamento direto.*
 
-### 1. Sistema Fuzzy de CoScore
+### 2. Sistema Fuzzy Principal (`limiarScore_v4.py`)
+Mapeia o Índice de Convicção (`IC`, 3 conjuntos) e a Coerência Total da Rede (`coEscore`, 5 conjuntos) em um intervalo numérico de tamanho do Inconclusivo (`limiarScore`, 9 conjuntos). 
+> **Resumo da inferência:** Quanto maior a convicção (`IC`) e maior a coerência dos checadores (`CoScoreTotal`), menor será a margem de dúvida (tamanho do intervalo Inconclusivo).
 
-Mapeia o Nível de Acerto (`assertLevel`, 5 níveis) e Nível de Confiança (`confidenceScore`, 3 níveis) para o Nível de Coerência (`coEscore`).
+---
 
-| Nível de Acerto / Confiança | Não Confiante (0.9) | Neutro (1.0) | Confiante (1.1) |
-|-----------------------------|---------------------|--------------|-----------------|
-| **Erro Gravíssimo (1)**     | Incoerente (0.25)   | Muito Incoerente (0.00)| Muito Incoerente (0.00)|
-| **Erro Grave (2)**          | Incoerente (0.25)   | Incoerente (0.25)      | Muito Incoerente (0.00)|
-| **Erro Razoável (3)**       | Neutro (0.50)       | Neutro (0.50)          | Incoerente (0.25)      |
-| **Acerto Razoável (4)**     | Coerente (0.75)     | Coerente (0.75)        | Coerente (0.75)        |
-| **Acerto Completo (5)**     | Coerente (0.75)     | Muito Coerente (1.00)  | Muito Coerente (1.00)  |
-
-*Nota: Esta tabela original foi otimizada para ser executada O(1) na versão `calculo_coScore_direto.py`.*
-
-### 2. Sistema Fuzzy de LimiarScore
-
-Mapeia o Índice de Convicção (`IC`, 3 conjuntos) e a Coerência Total da Rede (`coEscore`, 5 conjuntos) em um intervalo numérico do Limiar de Inconclusividade (`limiarScore`, 9 conjuntos).
-
-> Regras resumidas: Quanto maior a convicção, menor o tamanho do limiar inconclusivo.
-
-## Referências e Notas de Implementação
+## Referências e Próximos Passos
 
 > **TODO:**
-> - [ ] Preencher informações extras sobre o paper acadêmico original (se houver link ou DOI).
-> - [ ] Preencher detalhes de banco de dados se for conectar à API no futuro.
-> - [ ] Listar como as métricas serão salvas para a construção dos gráficos.
+> - [ ] Adicionar link/DOI para o paper acadêmico original e publicações base.
+> - [ ] Preencher detalhes de arquitetura de integração com o Banco de Dados (quando a API for ao ar).
+> - [ ] Documentar como as métricas e arrays de saída serão utilizados para a plotagem dos gráficos de pertinência e resultados.
