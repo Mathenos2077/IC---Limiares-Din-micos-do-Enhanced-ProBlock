@@ -1,6 +1,6 @@
 # Modelo de Limiares Dinâmicos do Enhanced ProBlock
 
-Este repositório contém o modelo matemático e de inferência fuzzy para a geração de Limiares Dinâmicos de moderação em sistemas de detecção de Fake News (como o Enhanced ProBlock).
+Este repositório contém o modelo matemático e de inferência fuzzy para a geração de Limiares Dinâmicos de moderação em sistemas de detecção de notícias falsas (como o Enhanced ProBlock).
 
 A arquitetura principal define que para cada notícia avaliada, o sistema ajusta as faixas de limiares que ditam se a probabilidade daquela notícia (CDF) é considerada verdadeira, falsa ou inconclusiva, baseado no consenso dos avaliadores.
 
