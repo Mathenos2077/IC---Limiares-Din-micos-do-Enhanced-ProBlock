@@ -111,5 +111,5 @@ Mapeia o Índice de Convicção (`IC`, 3 conjuntos) e a Coerência Total da Rede
 
 > **TODO:**
 > - [ ] Adicionar link/DOI para o paper acadêmico original e publicações base.
-> - [ ] Preencher detalhes de arquitetura de integração com o Banco de Dados (quando a API for ao ar).
+> - [ ] Preencher detalhes de arquitetura de integração.
 > - [ ] Documentar como as métricas e arrays de saída serão utilizados para a plotagem dos gráficos de pertinência e resultados.
