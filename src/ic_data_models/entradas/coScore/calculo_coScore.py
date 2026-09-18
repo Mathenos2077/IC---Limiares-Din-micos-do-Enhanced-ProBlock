@@ -24,11 +24,11 @@ confidenceScore[confidenceC[0]] = fuzz.gaussmf(confidenceScore.universe, 0.00, s
 confidenceScore[confidenceC[1]] = fuzz.gaussmf(confidenceScore.universe, 0.50, sigma3)
 confidenceScore[confidenceC[2]] = fuzz.gaussmf(confidenceScore.universe, 1.00, sigma3)
 
-coEscore[coEscoreC[0]] = fuzz.gaussmf(assertLevel.universe, 0.00, sigma5)
-coEscore[coEscoreC[1]] = fuzz.gaussmf(assertLevel.universe, 0.25, sigma5)
-coEscore[coEscoreC[2]] = fuzz.gaussmf(assertLevel.universe, 0.50, sigma5)
-coEscore[coEscoreC[3]] = fuzz.gaussmf(assertLevel.universe, 0.75, sigma5)
-coEscore[coEscoreC[4]] = fuzz.gaussmf(assertLevel.universe, 1.00, sigma5)
+coEscore[coEscoreC[0]] = fuzz.gaussmf(coEscore.universe, 0.00, sigma5)
+coEscore[coEscoreC[1]] = fuzz.gaussmf(coEscore.universe, 0.25, sigma5)
+coEscore[coEscoreC[2]] = fuzz.gaussmf(coEscore.universe, 0.50, sigma5)
+coEscore[coEscoreC[3]] = fuzz.gaussmf(coEscore.universe, 0.75, sigma5)
+coEscore[coEscoreC[4]] = fuzz.gaussmf(coEscore.universe, 1.00, sigma5)
 
 rules = []
 
