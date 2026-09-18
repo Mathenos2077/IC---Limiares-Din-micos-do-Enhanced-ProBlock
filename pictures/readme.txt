@@ -1,1 +1,0 @@
-Esta pasta contém imagens relacionadas ao modelo fuzzy e ao Enhanced ProBlock. 

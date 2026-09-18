@@ -2,23 +2,26 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 ### Calcula o IC - Índice de Convicção (Seu código original)
-def getIC_v4(newsVoteArray, subjectScoreArray, min=0.5, max=1.5, square=True):
+def getIC_v4(newsVoteArray, subjectScoreArray, N = 0.0, square=True):
     pontuacaoAval = [0, 0, 0, 0, 0]
-    
-    def calcular_valor(subjectScore, min, max):
-        return min + ((subjectScore - 1) / 4) * (max - min)
+    ps = (N-1)/(N + 1)
+    min_val = 1 - ps
+    max_val = 1 + ps
+
+    def calcular_valor(subjectScore, min_val, max_val):
+        return min_val + ((subjectScore - 1) / 4) * (max_val - min_val)
 
     for i in range(len(newsVoteArray)):
         if newsVoteArray[i] == -2:
-            pontuacaoAval[0] += calcular_valor(subjectScoreArray[i], min, max)
+            pontuacaoAval[0] += calcular_valor(subjectScoreArray[i], min_val, max_val)
         elif newsVoteArray[i] == -1:
-            pontuacaoAval[1] += calcular_valor(subjectScoreArray[i], min, max)
+            pontuacaoAval[1] += calcular_valor(subjectScoreArray[i], min_val, max_val)
         elif newsVoteArray[i] == 0:
-            pontuacaoAval[2] += calcular_valor(subjectScoreArray[i], min, max)
+            pontuacaoAval[2] += calcular_valor(subjectScoreArray[i], min_val, max_val)
         elif newsVoteArray[i] == 1:
-            pontuacaoAval[3] += calcular_valor(subjectScoreArray[i], min, max)
+            pontuacaoAval[3] += calcular_valor(subjectScoreArray[i], min_val, max_val)
         elif newsVoteArray[i] == 2:
-            pontuacaoAval[4] += calcular_valor(subjectScoreArray[i], min, max)
+            pontuacaoAval[4] += calcular_valor(subjectScoreArray[i], min_val, max_val)
 
     valores = [
         -2, 
@@ -53,53 +56,10 @@ def getIC_v4(newsVoteArray, subjectScoreArray, min=0.5, max=1.5, square=True):
      
     return abs(ic/2)
 
-### Nova Função de Teste e Gráfico
-def plot_ic_sensibilidade(newsVoteArray, subjectScoreArray, pares_limites=None, square=True):
-    """
-    Testa o algoritmo para os limites 'min' e 'max' definidos na lista de pares.
-    """
-    if pares_limites is None:
-        pares_limites = [(1.0, 1.0), (0.8, 1.2), (0.66, 1.33), (0.57, 1.43), (0.5, 1.5)]
-        
-    eixo_x_labels = [] 
-    valores_ic = []
-    indices = range(len(pares_limites))
-    
-    for min_val, max_val in pares_limites:
-        # Calcula o IC para o cenário atual
-        ic = getIC_v4(newsVoteArray, subjectScoreArray, min=min_val, max=max_val, square=square)
-        valores_ic.append(ic)
-        
-        # Salva o par [min, max] como texto para o eixo X do gráfico
-        eixo_x_labels.append(f"{min_val:.2f} | {max_val:.2f}")
-
-    # Plotagem
-    plt.figure(figsize=(9, 6))
-    plt.plot(indices, valores_ic, marker='o', linestyle='-', color='#1f77b4', linewidth=2, markersize=6)
-    plt.plot(indices[0], valores_ic[0], marker='o', color='red', markersize=10, label='Modelo Antigo (1.0 | 1.0)')
-    plt.xticks(indices, eixo_x_labels, rotation=45, ha='right')
-    plt.title('Sensibilidade do IC em Relação aos Limites [Min | Max]', fontsize=14, pad=15)
-    plt.xlabel('Pares de Limites [Mínimo | Máximo]', fontsize=12)
-    plt.ylabel('Resultado do IC Calculado', fontsize=12)
-    plt.grid(True, linestyle='--', alpha=0.6)
-    plt.legend()
-    plt.tight_layout()
-    plt.show()
-
 
 if __name__ == "__main__":
     # Cenário de teste
-    cenario_votos = np.array([2, 2, -2, -2, -2, -2])
-    cenario_scores = np.array([5, 5, 1, 1, 1, 1])
+    cenario_votos = np.array([2, 2, 2, 2, 2, 2, 2, 2, 2, 2, -2])
+    cenario_scores = np.array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5])
     
-    # Pares de limites (min, max) definidos
-    pares_a_b = [
-        (1.0, 1.0),
-        (0.8, 1.2),
-        (0.66, 1.33),
-        (0.57, 1.43),
-        (0.5, 1.5)
-    ]
-    
-    print("Gerando gráfico de sensibilidade...")
-    plot_ic_sensibilidade(cenario_votos, cenario_scores, pares_limites=pares_a_b, square=True)
+    print(getIC_v4(cenario_votos, cenario_scores, 20.0, square=True))
